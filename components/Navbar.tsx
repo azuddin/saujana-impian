@@ -1,4 +1,4 @@
-import { Container, Text } from "@chakra-ui/react";
+import { Container, IconButton, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Logo } from "./Logo";
@@ -68,27 +68,45 @@ const Navbar = (): JSX.Element => {
                 );
               })}
             </div>
-            <div className="absolute right-0 z-10 flex space-x-5">
+            <div className="absolute right-0 z-10 flex">
               <Link passHref href="/">
-                <img
-                  src="/assets/images/icon-facebook.svg"
-                  width={20}
-                  height={20}
-                />
+                <IconButton
+                  variant="link"
+                  aria-label="facebook"
+                  icon={
+                    <img
+                      src="/assets/images/icon-facebook.svg"
+                      width={20}
+                      height={20}
+                    />
+                  }
+                ></IconButton>
               </Link>
               <Link passHref href="/">
-                <img
-                  src="/assets/images/icon-whatsapp.svg"
-                  width={20}
-                  height={20}
-                />
+                <IconButton
+                  variant="link"
+                  aria-label="facebook"
+                  icon={
+                    <img
+                      src="/assets/images/icon-whatsapp.svg"
+                      width={20}
+                      height={20}
+                    />
+                  }
+                ></IconButton>
               </Link>
               <Link passHref href="/">
-                <img
-                  src="/assets/images/icon-youtube.svg"
-                  width={20}
-                  height={20}
-                />
+                <IconButton
+                  variant="link"
+                  aria-label="facebook"
+                  icon={
+                    <img
+                      src="/assets/images/icon-youtube.svg"
+                      width={20}
+                      height={20}
+                    />
+                  }
+                ></IconButton>
               </Link>
             </div>
           </div>
