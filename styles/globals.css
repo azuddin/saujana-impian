@@ -16,3 +16,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: #ffffff !important;
+  border-width: 2px !important;
+  opacity: 0.8 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #464749 !important;
+  border-width: 0px !important;
+  opacity: 1 !important;
+}
