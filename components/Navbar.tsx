@@ -27,6 +27,7 @@ const menu = [
   {
     label: "E-BROCHURE",
     url: "/e-brochure",
+    target: "_blank",
   },
   {
     label: "REGISTRATION",
@@ -58,7 +59,8 @@ const Navbar = (): JSX.Element => {
                       fontWeight="semibold"
                       color={isActive ? "#FFFFFF" : "#C5AB90"}
                       fontSize="md"
-                      as="button"
+                      as="a"
+                      target={m.target}
                     >
                       {m.label}
                     </Text>

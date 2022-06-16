@@ -8,7 +8,10 @@ const SitePlanPage: NextPage = () => {
     <>
       <Head>
         <title>Site Plan - Saujana Impian @ Seremban 2 Height</title>
-        <meta name="description" content="Saujana Impian @ Seremban 2 Height" />
+        <meta
+          name="description"
+          content="Site Plan - Saujana Impian @ Seremban 2 Height"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
