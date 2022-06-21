@@ -147,11 +147,11 @@ const ProjectPage: NextPage = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="flex justify-start xl:justify-end xl:w-full w-1/2 mt-10 mb-2 mx-10 xl:m-0">
+        <div className="flex justify-start xl:justify-end xl:w-full w-1/2 mt-10 mb-2 mx-5 xl:m-0">
           <img src="/assets/images/page-2/Specifications.png" />
         </div>
 
-        <div className="divide-y-4 divide-yellow-800 px-10 xl:p-0">
+        <div className="divide-y-4 divide-yellow-800 px-5">
           <div className="flex flex-col xl:flex-row w-full py-5">
             <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
@@ -312,7 +312,146 @@ const ProjectPage: NextPage = () => {
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="xl:hidden grid grid-cols-3">
+              <Text fontSize="2xl" fontWeight="light"></Text>
+              <Text fontSize="2xl" fontWeight="semibold">
+                2 - STOREY SEMI D
+              </Text>
+              <Text fontSize="2xl" fontWeight="semibold">
+                2 - STOREY BUNGALOW
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Lighting Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                40 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                53 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Power Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                32 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                44 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Air Cond Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                7 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                8 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Fan Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                7 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                9 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Telephone Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                FWS Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                TV Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                3 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                3 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Bell Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Auto Gate Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Gate Light Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                2 nos
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                3 nos
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Water Pump Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Solar Heater Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+
+              <Text fontSize="2xl" fontWeight="light">
+                Network Point
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+              <Text fontSize="2xl" fontWeight="light">
+                1 no
+              </Text>
+            </div>
+            <div className="w-1/4 hidden xl:flex flex-col">
               <Text fontSize="2xl" fontWeight="light">
                 Lighting Point
               </Text>
@@ -353,7 +492,7 @@ const ProjectPage: NextPage = () => {
                 Network Point
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-1/4 hidden xl:flex flex-col">
               <Text fontSize="2xl" fontWeight="light">
                 40 nos
               </Text>
@@ -394,7 +533,7 @@ const ProjectPage: NextPage = () => {
                 1 no
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-1/4 hidden xl:flex flex-col">
               <Text fontSize="2xl" fontWeight="light">
                 53 nos
               </Text>
