@@ -1,6 +1,7 @@
 import { Container, IconButton, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const menu = [
@@ -38,8 +39,28 @@ const menu = [
 const Navbar = (): JSX.Element => {
   const router = useRouter();
   const currentUrl = router.asPath;
+  const [openMenu, setOpenMenu] = useState(false);
 
   const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const navClassnames = `w-full xl:w-auto ${
+    isDesktop ? "flex" : openMenu ? "flex h-screen" : "hidden"
+  } flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0`;
+
+  const toggleOpenMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setOpenMenu(false);
+    };
+
+    router.events.on("routeChangeStart", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, []);
 
   return (
     <div className="top-0 z-50 fixed">
@@ -56,6 +77,7 @@ const Navbar = (): JSX.Element => {
               <Logo></Logo>
               <div className="block xl:hidden">
                 <IconButton
+                  onClick={toggleOpenMenu}
                   variant="link"
                   aria-label="menu"
                   icon={
@@ -65,7 +87,7 @@ const Navbar = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="w-full xl:w-auto hidden xl:flex flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0">
+            <div className={navClassnames}>
               <div className="w-full xl:w-auto flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-5 mr-44">
                 {menu.map((m, k) => {
                   const isActive = m.url === currentUrl;
