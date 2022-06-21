@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Text } from "@chakra-ui/react";
+import { Text, useMediaQuery } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/Layout";
@@ -59,6 +59,8 @@ const gridItem2 = [
 ];
 
 const ProjectPage: NextPage = () => {
+  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+
   return (
     <>
       <Head>
@@ -71,14 +73,14 @@ const ProjectPage: NextPage = () => {
       </Head>
       <Layout>
         <img src="/assets/images/page-2/welcome-to-a-breathtaking.jpeg" />
-        <div className="flex justify-center my-20 px-80">
-          <Text fontSize="2xl" textAlign="center">
+        <div className="flex justify-center my-20 px-20 xl:px-60 2xl:px-80">
+          <Text fontSize="3xl" textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
             combination of urban and natural settings at Seremban 2.
           </Text>
         </div>
         <div className="divide-y divide-dashed">
-          <div className="flex divide-x divide-dashed">
+          <div className="flex flex-col xl:flex-row xl:divide-x xl:divide-dashed">
             {gridItem.map((item, k) => {
               return (
                 <div
@@ -96,7 +98,7 @@ const ProjectPage: NextPage = () => {
               );
             })}
           </div>
-          <div className="flex divide-x divide-dashed">
+          <div className="flex flex-col xl:flex-row xl:divide-x xl:divide-dashed">
             {gridItem2.map((item, k) => {
               return (
                 <div
@@ -115,6 +117,7 @@ const ProjectPage: NextPage = () => {
             })}
           </div>
         </div>
+
         <Swiper
           pagination={true}
           modules={[Pagination]}
@@ -123,23 +126,34 @@ const ProjectPage: NextPage = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <img src="/assets/images/banner/slider-1.jpeg" />
+            <img
+              className="mx-auto"
+              src={
+                isDesktop
+                  ? "/assets/images/page-2/Desktop-Semi-d-floor-plan.png"
+                  : "/assets/images/page-2/Mobile-Semi-d-floor plan.png"
+              }
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/assets/images/banner/slider-2.jpeg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/assets/images/banner/slider-3.jpeg" />
+            <img
+              className="mx-auto"
+              src={
+                isDesktop
+                  ? "/assets/images/page-2/Desktop-Bungalow-floor-plan.png"
+                  : "/assets/images/page-2/Mobile-Bungalow-floor-plan.png"
+              }
+            />
           </SwiperSlide>
         </Swiper>
 
-        <div className="flex justify-end w-full">
+        <div className="flex justify-start xl:justify-end xl:w-full w-1/2 mt-10 mb-2 mx-10 xl:m-0">
           <img src="/assets/images/page-2/Specifications.png" />
         </div>
 
-        <div className="divide-y-4 divide-yellow-800">
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+        <div className="divide-y-4 divide-yellow-800 px-10 xl:p-0">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 STRUCTURE
               </Text>
@@ -149,8 +163,8 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 WALL
               </Text>
@@ -160,8 +174,8 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 ROOF
               </Text>
@@ -171,8 +185,8 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 CEILING FINISHES
               </Text>
@@ -182,8 +196,8 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 FLOOR FINISHES
               </Text>
@@ -193,13 +207,13 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 WALL FINISHES
               </Text>
             </div>
-            <div className="flex flex-col w-1/4">
+            <div className="flex flex-col w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="light">
                 Kitchen &amp; Bathrooms
               </Text>
@@ -207,7 +221,7 @@ const ProjectPage: NextPage = () => {
                 Other Areas
               </Text>
             </div>
-            <div className="flex flex-col w-1/4">
+            <div className="flex flex-col w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="light">
                 Tiles Up to Ceiling Height
               </Text>
@@ -217,8 +231,8 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 DOORS
               </Text>
@@ -236,8 +250,8 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 WINDOWS
               </Text>
@@ -248,13 +262,13 @@ const ProjectPage: NextPage = () => {
             </Text>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 SANITARY FITTINGS
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="light">
                 Kitchen
               </Text>
@@ -262,7 +276,7 @@ const ProjectPage: NextPage = () => {
                 Bathrooms
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="semibold">
                 2 - STOREY SEMI D
               </Text>
@@ -276,7 +290,7 @@ const ProjectPage: NextPage = () => {
                 Vanity Top to Master Bath only
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="semibold">
                 2 - STOREY BUNGALOW
               </Text>
@@ -292,8 +306,8 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
@@ -423,13 +437,13 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 EXTERNAL
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="light">
                 Fence
               </Text>
@@ -450,14 +464,14 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex w-full py-5">
-            <div className="w-1/4">
+          <div className="flex flex-col xl:flex-row w-full py-5">
+            <div className="w-full xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
                 MISCELLANEOUS
               </Text>
             </div>
             <div className="w-1/4"></div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="semibold">
                 2 - STOREY SEMI D
               </Text>
@@ -489,7 +503,7 @@ const ProjectPage: NextPage = () => {
                 Digital Lock to Entrance Door
               </Text>
             </div>
-            <div className="w-1/4 flex flex-col">
+            <div className="w-full xl:w-1/4 flex flex-col">
               <Text fontSize="2xl" fontWeight="semibold">
                 2 - STOREY BUNGALOW
               </Text>

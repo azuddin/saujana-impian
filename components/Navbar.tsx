@@ -1,4 +1,4 @@
-import { Container, IconButton, Text } from "@chakra-ui/react";
+import { Container, IconButton, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Logo } from "./Logo";
@@ -38,79 +38,99 @@ const menu = [
 const Navbar = (): JSX.Element => {
   const router = useRouter();
   const currentUrl = router.asPath;
+
+  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+
   return (
     <div className="top-0 z-50 fixed">
       <img
         src="/assets/images/top-left.svg"
-        width={400}
+        width={isDesktop ? 400 : 200}
         className="absolute top-0 left-0"
       />
-      <div className="bg-white h-12"></div>
+      <div className="bg-white h-12 hidden xl:block"></div>
       <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
         <div className="container mx-auto px-10">
-          <div className="flex justify-between items-center py-5 relative">
-            <Logo></Logo>
-            <div className="flex space-x-5 mr-44">
-              {menu.map((m, k) => {
-                const isActive = m.url === currentUrl;
-                return (
-                  <Link href={m.url} key={m.url} passHref>
-                    <Text
-                      fontWeight="semibold"
-                      color={isActive ? "#FFFFFF" : "#C5AB90"}
-                      fontSize="md"
-                      as="a"
-                      target={m.target}
-                    >
-                      {m.label}
-                    </Text>
-                  </Link>
-                );
-              })}
+          <div className="flex flex-col xl:flex-row items-center py-5 relative">
+            <div className="w-full xl:w-auto flex flex-grow justify-between items-center">
+              <Logo></Logo>
+              <div className="block xl:hidden">
+                <IconButton
+                  variant="link"
+                  aria-label="menu"
+                  icon={
+                    <img src="/assets/images/menu.svg" width={20} height={20} />
+                  }
+                ></IconButton>
+              </div>
             </div>
-            <div className="absolute right-0 z-10 flex">
-              <Link passHref href="/">
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={
-                    <img
-                      src="/assets/images/icon-facebook.svg"
-                      width={20}
-                      height={20}
-                    />
-                  }
-                ></IconButton>
-              </Link>
-              <Link passHref href="/">
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={
-                    <img
-                      src="/assets/images/icon-whatsapp.svg"
-                      width={20}
-                      height={20}
-                    />
-                  }
-                ></IconButton>
-              </Link>
-              <Link passHref href="/">
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={
-                    <img
-                      src="/assets/images/icon-youtube.svg"
-                      width={20}
-                      height={20}
-                    />
-                  }
-                ></IconButton>
-              </Link>
+
+            <div className="w-full xl:w-auto hidden xl:flex flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0">
+              <div className="w-full xl:w-auto flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-5 mr-44">
+                {menu.map((m, k) => {
+                  const isActive = m.url === currentUrl;
+                  return (
+                    <Link href={m.url} key={m.url} passHref>
+                      <Text
+                        fontWeight="semibold"
+                        color={isActive ? "#FFFFFF" : "#C5AB90"}
+                        fontSize="md"
+                        as="a"
+                        target={m.target}
+                      >
+                        {m.label}
+                      </Text>
+                    </Link>
+                  );
+                })}
+              </div>
+              <div className="xl:absolute right-0 z-10 flex mt-4 xl:mt-0">
+                <Link passHref href="/">
+                  <IconButton
+                    variant="link"
+                    aria-label="facebook"
+                    sx={{ justifyContent: isDesktop ? "center" : "flex-start" }}
+                    icon={
+                      <img
+                        src="/assets/images/icon-facebook.svg"
+                        width={20}
+                        height={20}
+                      />
+                    }
+                  ></IconButton>
+                </Link>
+                <Link passHref href="/">
+                  <IconButton
+                    variant="link"
+                    aria-label="whatsapp"
+                    sx={{ justifyContent: isDesktop ? "center" : "flex-start" }}
+                    icon={
+                      <img
+                        src="/assets/images/icon-whatsapp.svg"
+                        width={20}
+                        height={20}
+                      />
+                    }
+                  ></IconButton>
+                </Link>
+                <Link passHref href="/">
+                  <IconButton
+                    variant="link"
+                    aria-label="youtube"
+                    sx={{ justifyContent: isDesktop ? "center" : "flex-start" }}
+                    icon={
+                      <img
+                        src="/assets/images/icon-youtube.svg"
+                        width={20}
+                        height={20}
+                      />
+                    }
+                  ></IconButton>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="absolute top-0 right-0 w-64 flex items-end justify-end">
+          <div className="absolute top-0 right-0 w-64 hidden xl:flex items-end justify-end">
             <img src="/assets/images/top-right.svg" width={250} />
           </div>
         </div>
