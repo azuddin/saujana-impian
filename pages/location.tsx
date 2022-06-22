@@ -1,8 +1,11 @@
+import { useMediaQuery } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/Layout";
 
 const LocationPage: NextPage = () => {
+  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+
   return (
     <>
       <Head>
@@ -25,7 +28,11 @@ const LocationPage: NextPage = () => {
             <div className="flex-1 ">
               <img
                 className="mx-auto"
-                src="/assets/images/page-4/fasilities.png"
+                src={
+                  isDesktop
+                    ? "/assets/images/page-4/fasilities.png"
+                    : "/assets/images/Fasilities@2x.jpg"
+                }
               />
             </div>
             <div className="flex-1 ">

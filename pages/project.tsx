@@ -74,24 +74,24 @@ const ProjectPage: NextPage = () => {
       <Layout>
         <img src="/assets/images/page-2/welcome-to-a-breathtaking.jpeg" />
         <div className="flex justify-center my-20 px-20 xl:px-60 2xl:px-80">
-          <Text fontSize="3xl" textAlign="center">
+          <Text fontSize="2xl" textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
             combination of urban and natural settings at Seremban 2.
           </Text>
         </div>
-        <div className="divide-y divide-dashed">
+        <div className="xl:divide-y xl:divide-dashed mb-20">
           <div className="flex flex-col xl:flex-row xl:divide-x xl:divide-dashed">
             {gridItem.map((item, k) => {
               return (
                 <div
                   key={k}
-                  className="flex flex-grow flex-col justify-center items-center m-5"
+                  className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
-                  <img src={item.img} height={100} className="mb-5" />
-                  <Text fontSize="md" textAlign="center">
+                  <img src={item.img} className="mb-5 h-14" />
+                  <Text fontSize="sm" textAlign="center">
                     {item.line1}
                   </Text>
-                  <Text fontSize="md" textAlign="center">
+                  <Text fontSize="sm" textAlign="center">
                     {item.line2}
                   </Text>
                 </div>
@@ -103,9 +103,9 @@ const ProjectPage: NextPage = () => {
               return (
                 <div
                   key={k}
-                  className="flex flex-grow flex-col justify-center items-center m-5"
+                  className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
-                  <img src={item.img} height={100} className="mb-5" />
+                  <img src={item.img} className="mb-5 h-14" />
                   <Text fontSize="md" textAlign="center">
                     {item.line1}
                   </Text>
@@ -127,7 +127,7 @@ const ProjectPage: NextPage = () => {
         >
           <SwiperSlide>
             <img
-              className="mx-auto"
+              className="w-screen mb-20"
               src={
                 isDesktop
                   ? "/assets/images/page-2/Desktop-Semi-d-floor-plan.png"
@@ -137,7 +137,7 @@ const ProjectPage: NextPage = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img
-              className="mx-auto"
+              className="w-screen mb-20"
               src={
                 isDesktop
                   ? "/assets/images/page-2/Desktop-Bungalow-floor-plan.png"

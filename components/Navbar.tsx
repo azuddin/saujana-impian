@@ -42,9 +42,6 @@ const Navbar = (): JSX.Element => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const [isDesktop] = useMediaQuery("(min-width: 1280px)");
-  const navClassnames = `w-full xl:w-auto ${
-    isDesktop ? "flex" : openMenu ? "flex h-screen" : "hidden"
-  } flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0`;
 
   const toggleOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -61,6 +58,10 @@ const Navbar = (): JSX.Element => {
       router.events.off("routeChangeStart", handleRouteChange);
     };
   }, []);
+
+  const navMobileClassname = `${
+    openMenu && !isDesktop ? "" : "hidden"
+  } bg-opacity-90 bg-stone-700 fixed w-screen`;
 
   return (
     <div className="top-0 z-50 fixed">
@@ -81,13 +82,21 @@ const Navbar = (): JSX.Element => {
                   variant="link"
                   aria-label="menu"
                   icon={
-                    <img src="/assets/images/menu.svg" width={20} height={20} />
+                    <img
+                      src={
+                        openMenu
+                          ? "/assets/images/close@2x.png"
+                          : "/assets/images/menu.svg"
+                      }
+                      width={20}
+                      height={20}
+                    />
                   }
                 ></IconButton>
               </div>
             </div>
 
-            <div className={navClassnames}>
+            <div className="w-full xl:w-auto hidden xl:flex flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0">
               <div className="w-full xl:w-auto flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-5 mr-44">
                 {menu.map((m, k) => {
                   const isActive = m.url === currentUrl;
@@ -155,6 +164,26 @@ const Navbar = (): JSX.Element => {
           <div className="absolute top-0 right-0 w-64 hidden xl:flex items-end justify-end">
             <img src="/assets/images/top-right.svg" width={250} />
           </div>
+        </div>
+      </div>
+      <div className={navMobileClassname}>
+        <div className="py-10 space-y-5 flex flex-col container items-center mx-auto">
+          {menu.map((m, k) => {
+            const isActive = m.url === currentUrl;
+            return (
+              <Link href={m.url} key={m.url} passHref>
+                <Text
+                  fontWeight="semibold"
+                  color={isActive ? "#8B5920" : "#FFFFFF"}
+                  fontSize="md"
+                  as="a"
+                  target={m.target}
+                >
+                  {m.label}
+                </Text>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>
