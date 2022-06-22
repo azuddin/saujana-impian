@@ -73,7 +73,11 @@ const ProjectPage: NextPage = () => {
       </Head>
       <Layout>
         <img
-          src="/assets/images/welcome-to-a-breathtaking-2.jpeg"
+          src={
+            isDesktop
+              ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
+              : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
+          }
           className="mt-24"
         />
         <div className="flex justify-center my-10 px-20 xl:px-60 2xl:px-80">
@@ -157,79 +161,99 @@ const ProjectPage: NextPage = () => {
         <div className="divide-y-2 divide-yellow-800 px-5">
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 STRUCTURE
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Reinforced Concrete Frame
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 WALL
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Common Clay Brick Wall
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 ROOF
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Metal Roofing Sheet / Reinforced Concrete Roof
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 CEILING FINISHES
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Skimcoat / Plasterglass Ceiling
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 FLOOR FINISHES
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Porcelein Tiles / Ceramics Tiles / Laminated Flooring
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 WALL FINISHES
               </Text>
             </div>
             <div className="w-1/2 xl:w-3/4 flex flex-col xl:flex-row">
               <div className="flex flex-col xl:w-1/3 mr-5 xl:mr-0">
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Kitchen &amp; Bathrooms
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Other Areas
                 </Text>
               </div>
               <div className="flex flex-col xl:w-1/3">
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Tiles Up to Ceiling Height
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Plaster and Paint
                 </Text>
               </div>
@@ -238,18 +262,18 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 DOORS
               </Text>
             </div>
             <div className="w-1/2 xl:w-auto flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Decorative Entrace Door
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Powder Coated Aluminium Frame with Tinted Glass Doors
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Moulded Doors
               </Text>
             </div>
@@ -257,11 +281,15 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 WINDOWS
               </Text>
             </div>
-            <Text fontSize="2xl" fontWeight="light" className="w-1/2">
+            <Text
+              fontSize={isDesktop ? "2xl" : "lg"}
+              fontWeight="light"
+              className="w-1/2"
+            >
               Powder Coated Aluminium Frame with Tinted Glass / Obsecured Glass
               Window
             </Text>
@@ -269,44 +297,44 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 SANITARY FITTINGS
               </Text>
             </div>
             <div className="w-1/2 xl:w-3/4 xl:flex space-y-5 xl:space-y-0">
               <div className="w-full xl:w-1/3 flex flex-col">
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Kitchen
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Bathrooms
                 </Text>
               </div>
               <div className="w-full xl:w-1/3 flex flex-col">
-                <Text fontSize="2xl" fontWeight="semibold">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                   2 - STOREY SEMI D
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Stainless Steel Sink
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Basin, Hand Shower, Paper Holder &amp; Padestal Water Closet
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Vanity Top to Master Bath only
                 </Text>
               </div>
               <div className="w-full xl:w-1/3 flex flex-col">
-                <Text fontSize="2xl" fontWeight="semibold">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                   2 - STOREY BUNGALOW
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Stainless Steel Sink
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Basin, Hand Shower, Paper Holder &amp; Padestal Water Closet
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Vanity Top to Master Bath, Bath 2, 3, 4, 5 &amp; Powder
                 </Text>
               </div>
@@ -314,261 +342,313 @@ const ProjectPage: NextPage = () => {
           </div>
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
             </div>
             <div className="w-1/2 xl:hidden grid grid-cols-4">
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Lighting Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 40 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 53 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Power Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 32 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 44 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Air Cond Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 8 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Fan Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 9 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Telephone Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 FWS Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 TV Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Bell Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Auto Gate Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Gate Light Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 2 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Water Pump Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Solar Heater Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="2xl" fontWeight="light" className="col-span-2">
+              <Text
+                fontSize={isDesktop ? "2xl" : "lg"}
+                fontWeight="light"
+                className="col-span-2"
+              >
                 Network Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
             </div>
             <div className="w-1/4 hidden xl:flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Lighting Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Power Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Air Cond Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Fan Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Telephone Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 FWS Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 TV Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Bell Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Auto Gate Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Gate Light Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Water Pump Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Solar Heater Point
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Network Point
               </Text>
             </div>
             <div className="w-1/4 hidden xl:flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 40 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 32 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 2 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
             </div>
             <div className="w-1/4 hidden xl:flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 53 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 44 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 8 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 9 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 1 no
               </Text>
             </div>
@@ -576,26 +656,26 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 EXTERNAL
               </Text>
             </div>
             <div className="hidden xl:w-1/4 xl:flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Fence
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Gate
               </Text>
             </div>
             <div className="w-1/2 flex flex-col">
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Concrete Block Wall
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Mild Steel Frame with Aluminium Panel Main Gate
               </Text>
-              <Text fontSize="2xl" fontWeight="light">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                 Mild Steel Gate
               </Text>
             </div>
@@ -603,76 +683,76 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
-              <Text fontSize="2xl" fontWeight="semibold">
+              <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                 MISCELLANEOUS
               </Text>
             </div>
             <div className="w-auto xl:w-1/4"></div>
             <div className="w-1/2 xl:w-2/4 xl:flex space-y-5 xl:space-x-0">
               <div className="w-full xl:w-1/2 flex flex-col">
-                <Text fontSize="2xl" fontWeight="semibold">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                   2 - STOREY SEMI D
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Home Alarm Security System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Solar Water Heating System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Hot Water Piping to all Showers only
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Water Pump
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Air-Cond Piping and Discharge Pipe
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Stainless Steel Water Tank
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Rain Water Harvesting System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Shower Screen to Master Bath only
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Digital Lock to Entrance Door
                 </Text>
               </div>
               <div className="w-full xl:w-1/2 flex flex-col">
-                <Text fontSize="2xl" fontWeight="semibold">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="semibold">
                   2 - STOREY BUNGALOW
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Home Alarm Security System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Solar Water Heating System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Hot Water Piping to all Showers only
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Water Pump
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Air-Cond Piping and Discharge Pipe
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Stainless Steel Water Tank
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Rain Water Harvesting System
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Shower Screen to Master Bath, Bath 2, 3, 4 &amp; 5
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Digital Lock to Entrance Door
                 </Text>
-                <Text fontSize="2xl" fontWeight="light">
+                <Text fontSize={isDesktop ? "2xl" : "lg"} fontWeight="light">
                   Bath Tub to Master Bath only
                 </Text>
               </div>

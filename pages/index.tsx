@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Swiper
+          className="mt-24 xl:mt-0"
           pagination={true}
           modules={[Pagination]}
           slidesPerView={1}
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
         >
           <SwiperSlide>
             <img
-              className="mx-auto mb-20"
+              className="mx-auto mb-14"
               src={
                 isDesktop
                   ? "/assets/images/banner/slider-1.jpeg"
@@ -36,10 +37,24 @@ const Home: NextPage = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/assets/images/banner/slider-2.jpeg" />
+            <img
+              className="mx-auto mb-14"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider-2.jpeg"
+                  : "/assets/images/Slider-2@2x.jpg"
+              }
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/assets/images/banner/slider-3.jpeg" />
+            <img
+              className="mx-auto mb-14"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider-3.jpeg"
+                  : "/assets/images/Slider-3@2x.jpg"
+              }
+            />
           </SwiperSlide>
         </Swiper>
       </Layout>
