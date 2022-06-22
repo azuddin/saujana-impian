@@ -82,8 +82,8 @@ const ProjectPage: NextPage = () => {
             combination of urban and natural settings at Seremban 2.
           </Text>
         </div>
-        <div className="xl:divide-y xl:divide-dashed mb-20">
-          <div className="flex flex-col xl:flex-row xl:divide-x xl:divide-dashed">
+        <div className="xl:divide-y-2 xl:divide-yellow-800 xl:divide-dashed mb-20">
+          <div className="flex flex-col xl:flex-row xl:divide-x-2 xl:divide-yellow-800 xl:divide-dashed">
             {gridItem.map((item, k) => {
               return (
                 <div
@@ -101,7 +101,7 @@ const ProjectPage: NextPage = () => {
               );
             })}
           </div>
-          <div className="flex flex-col xl:flex-row xl:divide-x xl:divide-dashed">
+          <div className="flex flex-col xl:flex-row xl:divide-x-2 xl:divide-yellow-800 xl:divide-dashed">
             {gridItem2.map((item, k) => {
               return (
                 <div
@@ -154,7 +154,7 @@ const ProjectPage: NextPage = () => {
           <img src="/assets/images/page-2/Specifications.png" />
         </div>
 
-        <div className="divide-y-4 divide-yellow-800 px-5">
+        <div className="divide-y-2 divide-yellow-800 px-5">
           <div className="flex flex-row w-full py-5">
             <div className="w-1/2 xl:w-1/4">
               <Text fontSize="2xl" fontWeight="semibold">
