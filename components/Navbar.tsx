@@ -67,7 +67,7 @@ const Navbar = (): JSX.Element => {
     <div className="top-0 z-50 fixed">
       <img
         src="/assets/images/top-left.svg"
-        width={isDesktop ? 400 : 200}
+        width={isDesktop ? 400 : 220}
         className="absolute top-0 left-0"
       />
       <div className="bg-white h-12 hidden xl:block"></div>

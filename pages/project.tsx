@@ -72,9 +72,12 @@ const ProjectPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <img src="/assets/images/page-2/welcome-to-a-breathtaking.jpeg" />
-        <div className="flex justify-center my-20 px-20 xl:px-60 2xl:px-80">
-          <Text fontSize="2xl" textAlign="center">
+        <img
+          src="/assets/images/welcome-to-a-breathtaking-2.jpeg"
+          className="mt-24"
+        />
+        <div className="flex justify-center my-10 px-20 xl:px-60 2xl:px-80">
+          <Text fontSize={isDesktop ? "2xl" : "md"} textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
             combination of urban and natural settings at Seremban 2.
           </Text>
