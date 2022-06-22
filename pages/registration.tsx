@@ -27,7 +27,7 @@ const RegistrationPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="px-10 xl:px-0">
+        <div className="px-5 xl:px-0 mt-44 xl:mt-0">
           <div className="flex flex-col xl:items-end mb-16">
             <div className="h-20 mt-0 xl:mt-10 mb-10 ">
               <img
@@ -48,7 +48,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize="2xl"
+                  fontSize={isDesktop ? "2xl" : "md"}
                 >
                   Full Name
                 </FormLabel>
@@ -68,7 +68,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize="2xl"
+                  fontSize={isDesktop ? "2xl" : "md"}
                 >
                   IC / Passport
                 </FormLabel>
@@ -88,7 +88,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize="2xl"
+                  fontSize={isDesktop ? "2xl" : "md"}
                 >
                   Email
                 </FormLabel>
@@ -108,7 +108,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize="2xl"
+                  fontSize={isDesktop ? "2xl" : "md"}
                 >
                   Mobile Number
                 </FormLabel>
@@ -125,8 +125,17 @@ const RegistrationPage: NextPage = () => {
 
             <div className="space-y-3 w-full mb-5">
               <FormControl className="flex items-center">
-                <Checkbox size="lg" spacing="1rem" colorScheme="orange">
-                  <Text fontWeight="light" fontSize="xl">
+                <Checkbox
+                  size="lg"
+                  spacing="1rem"
+                  colorScheme="orange"
+                  sx={{ alignItems: "flex-start" }}
+                >
+                  <Text
+                    fontWeight="light"
+                    fontSize={isDesktop ? "xl" : "md"}
+                    className="leading-none"
+                  >
                     I have read and understood the terms of the Privacy Notice
                     and consent to the processing of my Personal Data as
                     described in the notice.
@@ -135,8 +144,17 @@ const RegistrationPage: NextPage = () => {
               </FormControl>
 
               <FormControl className="flex items-center">
-                <Checkbox size="lg" spacing="1rem" colorScheme="orange">
-                  <Text fontWeight="light" fontSize="xl">
+                <Checkbox
+                  size="lg"
+                  spacing="1rem"
+                  colorScheme="orange"
+                  sx={{ alignItems: "flex-start" }}
+                >
+                  <Text
+                    fontWeight="light"
+                    fontSize={isDesktop ? "xl" : "md"}
+                    className="leading-none"
+                  >
                     I would like to receive newsletter and updates from Seremban
                     2 and IJM Land Berhad.
                   </Text>
