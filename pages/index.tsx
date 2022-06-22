@@ -5,8 +5,11 @@ import "swiper/css/pagination";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/Layout";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
+  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+
   return (
     <>
       <Head>
@@ -23,7 +26,14 @@ const Home: NextPage = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <img src="/assets/images/banner/slider-1.jpeg" />
+            <img
+              className="mx-auto mb-20"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider-1.jpeg"
+                  : "/assets/images/Slider-1@2x.jpg"
+              }
+            />
           </SwiperSlide>
           <SwiperSlide>
             <img src="/assets/images/banner/slider-2.jpeg" />

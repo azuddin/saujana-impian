@@ -10,7 +10,9 @@ const Layout = (props: LayoutProps): JSX.Element => {
   return (
     <>
       <Navbar></Navbar>
-      <div className="container mx-auto xl:px-20 pt-44 mb-10">{children}</div>
+      <div className="container mx-auto xl:px-20 xl:pt-44 mb-10">
+        {children}
+      </div>
     </>
   );
 };
