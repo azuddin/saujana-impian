@@ -17,7 +17,7 @@ const LocationPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex flex-col px-10 xl:px-0 mt-44 xl:mt-0">
+        <div className="flex flex-col px-10 xl:px-0 pt-44 xl:mt-0">
           <div className="h-20 mt-0 xl:mt-10 mb-10 ">
             <img
               src="/assets/images/page-4/LocationMap@2x.png"

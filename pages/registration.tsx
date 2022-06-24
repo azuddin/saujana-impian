@@ -27,7 +27,7 @@ const RegistrationPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="px-5 xl:px-0 mt-44 xl:mt-0">
+        <div className="px-5 xl:px-0 pt-44 xl:mt-0">
           <div className="flex flex-col xl:items-end mb-16">
             <div className="h-20 mt-0 xl:mt-10 mb-10 ">
               <img

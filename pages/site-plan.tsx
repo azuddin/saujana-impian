@@ -15,7 +15,7 @@ const SitePlanPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex flex-col-reverse xl:flex-row mt-44 xl:mt-0">
+        <div className="flex flex-col-reverse xl:flex-row pt-44 xl:mt-0">
           <div className="w-full xl:w-2/3 mt-10 xl:m-0">
             <img src="/assets/images/page-3/SitePlanImg.png" />
           </div>

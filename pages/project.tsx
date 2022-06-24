@@ -71,15 +71,15 @@ const ProjectPage: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <img
+        src={
+          isDesktop
+            ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
+            : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
+        }
+        className="mt-20 xl:mt-32 mx-auto w-full"
+      />
       <Layout>
-        <img
-          src={
-            isDesktop
-              ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
-              : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
-          }
-          className="mt-24"
-        />
         <div className="flex justify-center my-10 px-5 xl:px-60 2xl:px-80">
           <Text fontSize={isDesktop ? "2xl" : "md"} textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
