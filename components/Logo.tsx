@@ -4,9 +4,9 @@ import { ReactNode } from "react";
 const Logo = (): JSX.Element => {
   const [isDesktop] = useMediaQuery("(min-width: 1280px)");
   return (
-    <div className="flex flex-col items-center w-20 xl:w-36">
+    <div className="flex flex-col items-center w-16 xl:w-36">
       <img src="/assets/images/logo-1.svg" width={140} />
-      <Text fontSize="xs" className="truncate">
+      <Text fontSize="xx-small" className="truncate">
         @ SEREMBAN 2 HEIGHTS
       </Text>
       <Text
