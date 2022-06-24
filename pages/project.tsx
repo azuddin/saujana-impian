@@ -138,7 +138,7 @@ const ProjectPage: NextPage = () => {
               src={
                 isDesktop
                   ? "/assets/images/page-2/Desktop-Semi-d-floor-plan.png"
-                  : "/assets/images/page-2/Mobile-Semi-d-floor plan.png"
+                  : "/assets/images/page-2/Semi-d-floor plan@2x.jpg"
               }
             />
           </SwiperSlide>
@@ -148,7 +148,7 @@ const ProjectPage: NextPage = () => {
               src={
                 isDesktop
                   ? "/assets/images/page-2/Desktop-Bungalow-floor-plan.png"
-                  : "/assets/images/page-2/Mobile-Bungalow-floor-plan.png"
+                  : "/assets/images/page-2/Bungalow-floor-plan@2x.jpg"
               }
             />
           </SwiperSlide>
