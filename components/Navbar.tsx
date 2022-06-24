@@ -72,7 +72,7 @@ const Navbar = (): JSX.Element => {
       />
       <div className="bg-white h-12 hidden xl:block"></div>
       <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-10 xl:px-0">
           <div className="flex flex-col xl:flex-row items-center py-5 relative">
             <div className="w-full xl:w-auto flex flex-grow justify-between items-center">
               <Logo></Logo>
