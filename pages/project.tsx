@@ -80,7 +80,7 @@ const ProjectPage: NextPage = () => {
           }
           className="mt-24"
         />
-        <div className="flex justify-center my-10 px-20 xl:px-60 2xl:px-80">
+        <div className="flex justify-center my-10 px-5 xl:px-60 2xl:px-80">
           <Text fontSize={isDesktop ? "2xl" : "md"} textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
             combination of urban and natural settings at Seremban 2.
