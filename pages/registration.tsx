@@ -42,7 +42,10 @@ const RegistrationPage: NextPage = () => {
             />
           </div> */}
             <div className="space-y-5 w-full mb-16">
-              <FormControl isRequired className="flex items-end justify-center">
+              <FormControl
+                isRequired
+                className="flex items-start justify-center flex-col lg:flex-row lg:items-end"
+              >
                 <FormLabel
                   htmlFor="fullname"
                   sx={{ padding: 0, margin: 0 }}
@@ -62,7 +65,10 @@ const RegistrationPage: NextPage = () => {
                 />
               </FormControl>
 
-              <FormControl isRequired className="flex items-end justify-center">
+              <FormControl
+                isRequired
+                className="flex items-start justify-center flex-col lg:flex-row lg:items-end"
+              >
                 <FormLabel
                   htmlFor="ic"
                   sx={{ padding: 0, margin: 0 }}
@@ -82,7 +88,10 @@ const RegistrationPage: NextPage = () => {
                 />
               </FormControl>
 
-              <FormControl isRequired className="flex items-end justify-center">
+              <FormControl
+                isRequired
+                className="flex items-start justify-center flex-col lg:flex-row lg:items-end"
+              >
                 <FormLabel
                   htmlFor="email"
                   sx={{ padding: 0, margin: 0 }}
@@ -102,7 +111,10 @@ const RegistrationPage: NextPage = () => {
                 />
               </FormControl>
 
-              <FormControl isRequired className="flex items-end justify-center">
+              <FormControl
+                isRequired
+                className="flex items-start justify-center flex-col lg:flex-row lg:items-end"
+              >
                 <FormLabel
                   htmlFor="mobile_number"
                   sx={{ padding: 0, margin: 0 }}
