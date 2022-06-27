@@ -51,7 +51,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "xl" : "md"}
+                  fontSize="md"
                 >
                   Full Name
                 </FormLabel>
@@ -74,7 +74,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "xl" : "md"}
+                  fontSize="md"
                 >
                   IC / Passport
                 </FormLabel>
@@ -97,7 +97,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "xl" : "md"}
+                  fontSize="md"
                 >
                   Email
                 </FormLabel>
@@ -120,7 +120,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "xl" : "md"}
+                  fontSize="md"
                 >
                   Mobile Number
                 </FormLabel>
@@ -145,7 +145,7 @@ const RegistrationPage: NextPage = () => {
                 >
                   <Text
                     fontWeight="light"
-                    fontSize={isDesktop ? "lg" : "md"}
+                    fontSize="md"
                     className="leading-none"
                   >
                     I have read and understood the terms of the Privacy Notice
@@ -164,7 +164,7 @@ const RegistrationPage: NextPage = () => {
                 >
                   <Text
                     fontWeight="light"
-                    fontSize={isDesktop ? "lg" : "md"}
+                    fontSize="md"
                     className="leading-none"
                   >
                     I would like to receive newsletter and updates from Seremban
@@ -174,7 +174,7 @@ const RegistrationPage: NextPage = () => {
               </FormControl>
             </div>
 
-            <FormControl className="flex items-center justify-center">
+            <FormControl className="flex items-center justify-center mt-6">
               <Button
                 isLoading={false}
                 type="submit"

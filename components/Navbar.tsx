@@ -67,12 +67,12 @@ const Navbar = (): JSX.Element => {
     <div className="top-0 z-50 fixed">
       <img
         src="/assets/images/top-left.svg"
-        width={isDesktop ? 400 : 220}
-        className="absolute top-0 left-0"
+        width={isDesktop ? 380 : 280}
+        className="absolute top-0 left-0 lg:-left-8"
       />
       <div className="bg-white h-12 hidden lg:block"></div>
       <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
-        <div className="w-full px-10 lg:px-5">
+        <div className="w-full px-10">
           <div className="flex flex-col lg:flex-row items-center justify-between py-5 relative">
             <div className="w-full lg:w-auto flex flex-grow justify-between items-center">
               <Logo></Logo>

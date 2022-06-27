@@ -5,7 +5,7 @@ const Logo = (): JSX.Element => {
   const [isDesktop] = useMediaQuery("(min-width: 1024px)");
   return (
     <div className="flex flex-col items-center">
-      <div className="w-16 lg:w-24">
+      <div className="w-24">
         <img src="/assets/images/logo-1.svg" width={140} />
       </div>
       <Text fontSize="xx-small" className="truncate">
