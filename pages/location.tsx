@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Layout } from "../components/Layout";
 
 const LocationPage: NextPage = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
 
   return (
     <>
@@ -17,21 +17,21 @@ const LocationPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex flex-col px-10 xl:px-0 pt-44 xl:mt-0">
-          <div className="h-20 mt-0 xl:mt-10 mb-10 ">
+        <div className="flex flex-col px-10 lg:px-0 pt-44 lg:mt-0">
+          <div className="h-20 mt-0 lg:mt-10 mb-10 ">
             <img
               src="/assets/images/page-4/LocationMap@2x.png"
-              className="h-full mx-auto xl:ml-10"
+              className="h-full mx-auto lg:ml-10"
             />
           </div>
-          <div className="flex flex-col-reverse xl:flex-row gap-10">
+          <div className="flex flex-col-reverse lg:flex-row gap-10">
             <div className="flex-1 ">
               <img
                 className="mx-auto"
                 src={
                   isDesktop
                     ? "/assets/images/page-4/fasilities.png"
-                    : "/assets/images/Fasilities@2x.jpg"
+                    : "/assets/images/page-2/Fasilities@2x.jpg"
                 }
               />
             </div>

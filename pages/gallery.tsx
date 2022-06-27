@@ -9,7 +9,7 @@ import { useMediaQuery } from "@chakra-ui/react";
 import { Navbar } from "../components/Navbar";
 
 const GalleryPage: NextPage = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
 
   return (
     <>
@@ -23,7 +23,7 @@ const GalleryPage: NextPage = () => {
       </Head>
       <Navbar></Navbar>
       <Swiper
-        className="mt-20 xl:mt-0"
+        className="mt-20 lg:mt-0"
         pagination={true}
         modules={[Pagination]}
         slidesPerView={1}

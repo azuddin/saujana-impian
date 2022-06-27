@@ -1,4 +1,4 @@
-import { Container, IconButton, Text, useMediaQuery } from "@chakra-ui/react";
+import { IconButton, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -41,7 +41,7 @@ const Navbar = (): JSX.Element => {
   const currentUrl = router.asPath;
   const [openMenu, setOpenMenu] = useState(false);
 
-  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
 
   const toggleOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -70,13 +70,13 @@ const Navbar = (): JSX.Element => {
         width={isDesktop ? 400 : 220}
         className="absolute top-0 left-0"
       />
-      <div className="bg-white h-12 hidden xl:block"></div>
+      <div className="bg-white h-12 hidden lg:block"></div>
       <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
-        <div className="container mx-auto px-10 xl:px-0">
-          <div className="flex flex-col xl:flex-row items-center py-5 relative">
-            <div className="w-full xl:w-auto flex flex-grow justify-between items-center">
+        <div className="w-full px-10 lg:px-5">
+          <div className="flex flex-col lg:flex-row items-center justify-between py-5 relative">
+            <div className="w-full lg:w-auto flex flex-grow justify-between items-center">
               <Logo></Logo>
-              <div className="block xl:hidden">
+              <div className="block lg:hidden">
                 <IconButton
                   onClick={toggleOpenMenu}
                   variant="link"
@@ -96,8 +96,8 @@ const Navbar = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="w-full xl:w-auto hidden xl:flex flex-col xl:flex-row justify-between xl:items-center pt-5 xl:pt-0">
-              <div className="w-full xl:w-auto flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-5 mr-44">
+            <div className="w-full lg:w-auto hidden lg:flex flex-col lg:flex-row justify-between lg:items-center pt-5 lg:pt-0">
+              <div className="w-full lg:w-auto flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-5 mr-36">
                 {menu.map((m, k) => {
                   const isActive = m.url === currentUrl;
                   return (
@@ -105,7 +105,7 @@ const Navbar = (): JSX.Element => {
                       <Text
                         fontWeight="semibold"
                         color={isActive ? "#FFFFFF" : "#C5AB90"}
-                        fontSize="md"
+                        fontSize="xs"
                         as="a"
                         target={m.target}
                       >
@@ -115,7 +115,7 @@ const Navbar = (): JSX.Element => {
                   );
                 })}
               </div>
-              <div className="xl:absolute right-0 z-10 flex mt-4 xl:mt-0">
+              <div className="lg:absolute right-0 z-10 flex mt-4 lg:mt-0">
                 <Link passHref href="/">
                   <IconButton
                     variant="link"
@@ -161,13 +161,13 @@ const Navbar = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="absolute top-0 right-0 w-64 hidden xl:flex items-end justify-end">
+          <div className="absolute top-0 right-0 w-48 hidden lg:flex items-end justify-end">
             <img src="/assets/images/top-right.svg" width={250} />
           </div>
         </div>
       </div>
       <div className={navMobileClassname}>
-        <div className="py-10 space-y-5 flex flex-col container items-center mx-auto">
+        <div className="py-10 space-y-5 flex flex-col items-center mx-auto">
           {menu.map((m, k) => {
             const isActive = m.url === currentUrl;
             return (

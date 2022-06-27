@@ -15,11 +15,11 @@ const SitePlanPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex flex-col-reverse xl:flex-row pt-44 xl:mt-0">
-          <div className="w-full xl:w-2/3 mt-10 xl:m-0">
+        <div className="flex flex-col-reverse lg:flex-row pt-44 lg:mt-0">
+          <div className="w-full lg:w-2/3 mt-10 lg:m-0">
             <img src="/assets/images/page-3/SitePlanImg.png" />
           </div>
-          <div className="flex flex-grow flex-col items-center xl:pt-20 space-y-14">
+          <div className="flex flex-grow flex-col items-center lg:pt-20 space-y-14">
             <div className="h-20">
               <img
                 src="/assets/images/page-3/SitePlan@2x.png"

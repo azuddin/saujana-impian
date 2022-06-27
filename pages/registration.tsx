@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Layout } from "../components/Layout";
 
 const RegistrationPage: NextPage = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
 
   return (
     <>
@@ -27,12 +27,12 @@ const RegistrationPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="px-5 xl:px-0 pt-44 xl:mt-0">
-          <div className="flex flex-col xl:items-end mb-16">
-            <div className="h-20 mt-0 xl:mt-10 mb-10 ">
+        <div className="px-5 lg:px-0 pt-44 lg:mt-0">
+          <div className="flex flex-col lg:items-end mb-16">
+            <div className="h-20 mt-0 lg:mt-10 mb-10 ">
               <img
                 src="/assets/images/page-5/Registration@2x.png"
-                className="h-full mx-auto xl:ml-10"
+                className="h-full mx-auto lg:ml-10"
               />
             </div>
             {/* <div className="h-20 my-14 mr-20">
@@ -48,7 +48,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "2xl" : "md"}
+                  fontSize={isDesktop ? "xl" : "md"}
                 >
                   Full Name
                 </FormLabel>
@@ -68,7 +68,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "2xl" : "md"}
+                  fontSize={isDesktop ? "xl" : "md"}
                 >
                   IC / Passport
                 </FormLabel>
@@ -88,7 +88,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "2xl" : "md"}
+                  fontSize={isDesktop ? "xl" : "md"}
                 >
                   Email
                 </FormLabel>
@@ -108,7 +108,7 @@ const RegistrationPage: NextPage = () => {
                   sx={{ padding: 0, margin: 0 }}
                   className="w-60"
                   fontWeight="light"
-                  fontSize={isDesktop ? "2xl" : "md"}
+                  fontSize={isDesktop ? "xl" : "md"}
                 >
                   Mobile Number
                 </FormLabel>
@@ -133,7 +133,7 @@ const RegistrationPage: NextPage = () => {
                 >
                   <Text
                     fontWeight="light"
-                    fontSize={isDesktop ? "xl" : "md"}
+                    fontSize={isDesktop ? "lg" : "md"}
                     className="leading-none"
                   >
                     I have read and understood the terms of the Privacy Notice
@@ -152,7 +152,7 @@ const RegistrationPage: NextPage = () => {
                 >
                   <Text
                     fontWeight="light"
-                    fontSize={isDesktop ? "xl" : "md"}
+                    fontSize={isDesktop ? "lg" : "md"}
                     className="leading-none"
                   >
                     I would like to receive newsletter and updates from Seremban
@@ -181,12 +181,12 @@ const RegistrationPage: NextPage = () => {
             </FormControl>
           </div>
 
-          <div className="flex flex-col-reverse xl:flex-row gap-10 xl:border-t xl:border-yellow-800 xl:pt-10 px-10">
-            <div className="flex flex-col xl:flex-row items-center space-y-10 xl:space-y-0 xl:space-x-10">
+          <div className="flex flex-col-reverse lg:flex-row gap-10 lg:border-t lg:border-yellow-800 lg:pt-10 px-10">
+            <div className="flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-10">
               <div className="w-52">
                 <img src="/assets/images/page-5/IJMLANDlogo@2x.png" />
               </div>
-              <div className="flex flex-col xl:space-y-5">
+              <div className="flex flex-col lg:space-y-5">
                 <div className="">
                   <Text
                     textAlign={isDesktop ? "left" : "center"}
@@ -202,7 +202,7 @@ const RegistrationPage: NextPage = () => {
                   PT 10786, Seremban 2, 70300 Seremban, Negeri Sembilan.
                 </Text>
               </div>
-              <div className="flex flex-col xl:space-y-5">
+              <div className="flex flex-col lg:space-y-5">
                 <Text
                   textAlign={isDesktop ? "left" : "center"}
                   fontWeight="semibold"

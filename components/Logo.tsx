@@ -2,17 +2,20 @@ import { Text, useMediaQuery } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 const Logo = (): JSX.Element => {
-  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
   return (
-    <div className="flex flex-col items-center w-16 xl:w-36">
-      <img src="/assets/images/logo-1.svg" width={140} />
+    <div className="flex flex-col items-center">
+      <div className="w-16 lg:w-24">
+        <img src="/assets/images/logo-1.svg" width={140} />
+      </div>
       <Text fontSize="xx-small" className="truncate">
         @ SEREMBAN 2 HEIGHTS
       </Text>
       <Text
         fontSize={isDesktop ? "lg" : "xs"}
         fontWeight="bold"
-        className="truncate absolute -bottom-7 xl:-bottom-10 text-yellow-800"
+        className="truncate absolute -bottom-7 lg:-bottom-10 "
+        sx={{ color: "#C6762A" }}
       >
         FREEHOLD
       </Text>
