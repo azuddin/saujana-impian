@@ -159,68 +159,68 @@ const ProjectPage: NextPage = () => {
         </div>
 
         <div className="divide-y divide-yellow-800 px-5">
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 STRUCTURE
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Reinforced Concrete Frame
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WALL
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Common Clay Brick Wall
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 ROOF
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Metal Roofing Sheet / Reinforced Concrete Roof
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 CEILING FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Skimcoat / Plasterglass Ceiling
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 FLOOR FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Porcelein Tiles / Ceramics Tiles / Laminated Flooring
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WALL FINISHES
               </Text>
             </div>
-            <div className="w-1/2 lg:w-3/4 flex flex-col lg:flex-row">
+            <div className="w-3/4 flex flex-col lg:flex-row">
               <div className="flex flex-col lg:w-1/3 mr-5 lg:mr-0">
                 <Text fontSize="md" fontWeight="light">
                   Kitchen &amp; Bathrooms
@@ -240,13 +240,13 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 DOORS
               </Text>
             </div>
-            <div className="w-1/2 lg:w-auto flex flex-col">
+            <div className="w-3/4 lg:w-auto flex flex-col">
               <Text fontSize="md" fontWeight="light">
                 Decorative Entrace Door
               </Text>
@@ -259,25 +259,25 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WINDOWS
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-1/2">
+            <Text fontSize="md" fontWeight="light" className="w-3/4">
               Powder Coated Aluminium Frame with Tinted Glass / Obsecured Glass
               Window
             </Text>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 SANITARY FITTINGS
               </Text>
             </div>
-            <div className="w-1/2 lg:w-3/4 lg:flex space-y-5 lg:space-y-0">
+            <div className="w-3/4 lg:flex space-y-5 lg:space-y-0">
               <div className="w-full lg:w-1/3 flex flex-col">
                 <Text fontSize="md" fontWeight="light">
                   Kitchen
@@ -316,13 +316,13 @@ const ProjectPage: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
             </div>
-            <div className="w-1/2 lg:hidden grid grid-cols-4">
+            <div className="w-3/4 lg:hidden grid grid-cols-4">
               <Text fontSize="md" fontWeight="light" className="col-span-2">
                 Lighting Point
               </Text>
@@ -578,8 +578,8 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 EXTERNAL
               </Text>
@@ -605,14 +605,14 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-row w-full py-5">
-            <div className="w-1/2 lg:w-1/4">
+          <div className="flex flex-row w-full py-5 space-x-2">
+            <div className="w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 MISCELLANEOUS
               </Text>
             </div>
             <div className="w-auto lg:w-1/4"></div>
-            <div className="w-1/2 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-0">
+            <div className="w-3/4 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-0">
               <div className="w-full lg:w-1/2 flex flex-col">
                 <Text fontSize="md" fontWeight="semibold">
                   2 - STOREY SEMI D
