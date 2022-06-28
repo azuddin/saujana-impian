@@ -27,7 +27,7 @@ const menu = [
   },
   {
     label: "E-BROCHURE",
-    url: "/e-brochure",
+    url: "/Saujana_Intan_E-Brochure_230x320_FA3OL_1.6.22.pdf",
     target: "_blank",
   },
   {
@@ -63,16 +63,20 @@ const Navbar = (): JSX.Element => {
     openMenu && !isDesktop ? "" : "hidden"
   } bg-opacity-90 bg-stone-700 fixed w-screen`;
 
+  const topLeftClassnames = `${
+    isDesktop ? "" : "scale-50 -translate-x-20"
+  } absolute top-0 left-0 lg:-left-8`;
+
   return (
     <div className="top-0 z-50 fixed">
       <img
         src="/assets/images/top-left.svg"
         width={isDesktop ? 380 : 280}
-        className="absolute top-0 left-0 lg:-left-8"
+        className={topLeftClassnames}
       />
       <div className="bg-white h-12 hidden lg:block"></div>
       <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
-        <div className="w-full px-10">
+        <div className="w-full px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between py-5 relative">
             <div className="w-full lg:w-auto flex flex-grow justify-between items-center">
               <Logo></Logo>

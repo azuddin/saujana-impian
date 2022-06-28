@@ -160,67 +160,67 @@ const ProjectPage: NextPage = () => {
 
         <div className="divide-y divide-yellow-800 px-5">
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 STRUCTURE
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Reinforced Concrete Frame
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WALL
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Common Clay Brick Wall
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 ROOF
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Metal Roofing Sheet / Reinforced Concrete Roof
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4 lg:w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 CEILING FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Skimcoat / Plasterglass Ceiling
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 FLOOR FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Porcelein Tiles / Ceramics Tiles / Laminated Flooring
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WALL FINISHES
               </Text>
             </div>
-            <div className="w-3/4 flex flex-col lg:flex-row">
+            <div className="w-3/5 lg:w-3/4 flex flex-col lg:flex-row">
               <div className="flex flex-col lg:w-1/3 mr-5 lg:mr-0">
                 <Text fontSize="md" fontWeight="light">
                   Kitchen &amp; Bathrooms
@@ -241,12 +241,12 @@ const ProjectPage: NextPage = () => {
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 DOORS
               </Text>
             </div>
-            <div className="w-3/4 lg:w-auto flex flex-col">
+            <div className="w-3/5 lg:w-3/4 flex flex-col">
               <Text fontSize="md" fontWeight="light">
                 Decorative Entrace Door
               </Text>
@@ -260,24 +260,24 @@ const ProjectPage: NextPage = () => {
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 WINDOWS
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/4">
+            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
               Powder Coated Aluminium Frame with Tinted Glass / Obsecured Glass
               Window
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 SANITARY FITTINGS
               </Text>
             </div>
-            <div className="w-3/4 lg:flex space-y-5 lg:space-y-0">
+            <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0">
               <div className="w-full lg:w-1/3 flex flex-col">
                 <Text fontSize="md" fontWeight="light">
                   Kitchen
@@ -317,12 +317,12 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
             </div>
-            <div className="w-3/4 lg:hidden grid grid-cols-4">
+            <div className="w-3/5 lg:hidden grid grid-cols-4">
               <Text fontSize="md" fontWeight="light" className="col-span-2">
                 Lighting Point
               </Text>
@@ -579,104 +579,106 @@ const ProjectPage: NextPage = () => {
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
+            <div className="w-2/5 lg:w-1/4">
               <Text fontSize="md" fontWeight="semibold">
                 EXTERNAL
               </Text>
             </div>
-            <div className="hidden lg:w-1/4 lg:flex flex-col">
-              <Text fontSize="md" fontWeight="light">
-                Fence
-              </Text>
-              <Text fontSize="md" fontWeight="light">
-                Gate
-              </Text>
-            </div>
-            <div className="w-1/2 flex flex-col">
-              <Text fontSize="md" fontWeight="light">
-                Concrete Block Wall
-              </Text>
-              <Text fontSize="md" fontWeight="light">
-                Mild Steel Frame with Aluminium Panel Main Gate
-              </Text>
-              <Text fontSize="md" fontWeight="light">
-                Mild Steel Gate
-              </Text>
+            <div className="w-3/5 lg:w-3/4 flex">
+              <div className="w-1/3 lg:flex flex-col">
+                <Text fontSize="md" fontWeight="light">
+                  Fence
+                </Text>
+                <Text fontSize="md" fontWeight="light">
+                  Gate
+                </Text>
+              </div>
+              <div className="w-2/3 flex flex-col">
+                <Text fontSize="md" fontWeight="light">
+                  Concrete Block Wall
+                </Text>
+                <Text fontSize="md" fontWeight="light">
+                  Mild Steel Frame with Aluminium Panel Main Gate
+                </Text>
+                <Text fontSize="md" fontWeight="light">
+                  Mild Steel Gate
+                </Text>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
-            <div className="w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+            <div className="w-2/5 lg:w-1/4">
+              <Text fontSize="sm" fontWeight="semibold">
                 MISCELLANEOUS
               </Text>
             </div>
-            <div className="w-auto lg:w-1/4"></div>
-            <div className="w-3/4 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-0">
+            <div className="hidden lg:block lg:w-1/4"></div>
+            <div className="w-3/5 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-0">
               <div className="w-full lg:w-1/2 flex flex-col">
-                <Text fontSize="md" fontWeight="semibold">
+                <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY SEMI D
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Home Alarm Security System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Solar Water Heating System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Hot Water Piping to all Showers only
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Water Pump
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Air-Cond Piping and Discharge Pipe
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Stainless Steel Water Tank
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Rain Water Harvesting System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Shower Screen to Master Bath only
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Digital Lock to Entrance Door
                 </Text>
               </div>
               <div className="w-full lg:w-1/2 flex flex-col">
-                <Text fontSize="md" fontWeight="semibold">
+                <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY BUNGALOW
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Home Alarm Security System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Solar Water Heating System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Hot Water Piping to all Showers only
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Water Pump
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Air-Cond Piping and Discharge Pipe
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Stainless Steel Water Tank
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Rain Water Harvesting System
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Shower Screen to Master Bath, Bath 2, 3, 4 &amp; 5
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Digital Lock to Entrance Door
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Bath Tub to Master Bath only
                 </Text>
               </div>
