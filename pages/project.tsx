@@ -161,79 +161,79 @@ const ProjectPage: NextPage = () => {
         <div className="divide-y divide-yellow-800 px-5">
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 STRUCTURE
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Reinforced Concrete Frame
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 WALL
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Common Clay Brick Wall
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 ROOF
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Metal Roofing Sheet / Reinforced Concrete Roof
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 CEILING FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Skimcoat / Plasterglass Ceiling
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 FLOOR FINISHES
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Porcelein Tiles / Ceramics Tiles / Laminated Flooring
             </Text>
           </div>
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 WALL FINISHES
               </Text>
             </div>
             <div className="w-3/5 lg:w-3/4 flex flex-col lg:flex-row">
               <div className="flex flex-col lg:w-1/3 mr-5 lg:mr-0">
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Kitchen &amp; Bathrooms
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Other Areas
                 </Text>
               </div>
               <div className="flex flex-col lg:w-1/3">
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Tiles Up to Ceiling Height
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Plaster and Paint
                 </Text>
               </div>
@@ -242,18 +242,18 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 DOORS
               </Text>
             </div>
             <div className="w-3/5 lg:w-3/4 flex flex-col">
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Decorative Entrace Door
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Powder Coated Aluminium Frame with Tinted Glass Doors
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Moulded Doors
               </Text>
             </div>
@@ -261,11 +261,11 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 WINDOWS
               </Text>
             </div>
-            <Text fontSize="md" fontWeight="light" className="w-3/5 lg:w-3/4">
+            <Text fontSize="sm" fontWeight="light" className="w-3/5 lg:w-3/4">
               Powder Coated Aluminium Frame with Tinted Glass / Obsecured Glass
               Window
             </Text>
@@ -273,44 +273,44 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 SANITARY FITTINGS
               </Text>
             </div>
             <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0">
               <div className="w-full lg:w-1/3 flex flex-col">
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Kitchen
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Bathrooms
                 </Text>
               </div>
               <div className="w-full lg:w-1/3 flex flex-col">
-                <Text fontSize="md" fontWeight="semibold">
+                <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY SEMI D
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Stainless Steel Sink
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Basin, Hand Shower, Paper Holder &amp; Padestal Water Closet
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Vanity Top to Master Bath only
                 </Text>
               </div>
               <div className="w-full lg:w-1/3 flex flex-col">
-                <Text fontSize="md" fontWeight="semibold">
+                <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY BUNGALOW
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Stainless Steel Sink
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Basin, Hand Shower, Paper Holder &amp; Padestal Water Closet
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Vanity Top to Master Bath, Bath 2, 3, 4, 5 &amp; Powder
                 </Text>
               </div>
@@ -318,261 +318,261 @@ const ProjectPage: NextPage = () => {
           </div>
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
               </Text>
             </div>
             <div className="w-3/5 lg:hidden grid grid-cols-4">
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Lighting Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 40 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 53 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Power Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 32 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 44 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Air Cond Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 8 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Fan Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 9 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Telephone Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 FWS Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 TV Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Bell Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Auto Gate Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Gate Light Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 2 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Water Pump Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Solar Heater Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
 
-              <Text fontSize="md" fontWeight="light" className="col-span-2">
+              <Text fontSize="sm" fontWeight="light" className="col-span-2">
                 Network Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
             </div>
             <div className="w-1/4 hidden lg:flex flex-col">
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Lighting Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Power Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Air Cond Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Fan Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Telephone Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 FWS Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 TV Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Bell Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Auto Gate Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Gate Light Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Water Pump Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Solar Heater Point
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 Network Point
               </Text>
             </div>
             <div className="w-1/4 hidden lg:flex flex-col">
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 40 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 32 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 7 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 2 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
             </div>
             <div className="w-1/4 hidden lg:flex flex-col">
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 53 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 44 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 8 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 9 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 3 nos
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
-              <Text fontSize="md" fontWeight="light">
+              <Text fontSize="sm" fontWeight="light">
                 1 no
               </Text>
             </div>
@@ -580,27 +580,27 @@ const ProjectPage: NextPage = () => {
 
           <div className="flex flex-row w-full py-5 space-x-2">
             <div className="w-2/5 lg:w-1/4">
-              <Text fontSize="md" fontWeight="semibold">
+              <Text fontSize="sm" fontWeight="semibold">
                 EXTERNAL
               </Text>
             </div>
             <div className="w-3/5 lg:w-3/4 flex">
               <div className="w-1/3 lg:flex flex-col">
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Fence
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Gate
                 </Text>
               </div>
               <div className="w-2/3 flex flex-col">
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Concrete Block Wall
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Mild Steel Frame with Aluminium Panel Main Gate
                 </Text>
-                <Text fontSize="md" fontWeight="light">
+                <Text fontSize="sm" fontWeight="light">
                   Mild Steel Gate
                 </Text>
               </div>
