@@ -28,30 +28,30 @@ const Home: NextPage = () => {
       >
         <SwiperSlide>
           <img
-            className="mx-auto mb-14"
+            className="mx-auto lg:mt-36"
             src={
               isDesktop
-                ? "/assets/images/banner/slider-1.jpeg"
+                ? "/assets/images/banner/slider1b.png"
                 : "/assets/images/Slider-1@2x.jpg"
             }
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="mx-auto mb-14"
+            className="mx-auto lg:mt-36"
             src={
               isDesktop
-                ? "/assets/images/banner/slider-2.jpeg"
+                ? "/assets/images/banner/slider2b.png"
                 : "/assets/images/Slider-2@2x.jpg"
             }
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="mx-auto mb-14"
+            className="mx-auto lg:mt-36"
             src={
               isDesktop
-                ? "/assets/images/banner/slider-3.jpeg"
+                ? "/assets/images/banner/slider3b.png"
                 : "/assets/images/Slider-3@2x.jpg"
             }
           />
