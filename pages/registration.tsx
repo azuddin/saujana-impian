@@ -203,29 +203,31 @@ const RegistrationPage: NextPage = () => {
                   <Text
                     textAlign={isDesktop ? "left" : "center"}
                     fontWeight="semibold"
+                    fontSize="sm"
                   >
                     Seremban Two Holdings Sdn Bhd
                   </Text>
-                  <Text textAlign={isDesktop ? "left" : "center"}>
+                  <Text textAlign={isDesktop ? "left" : "center"} fontSize="sm">
                     (199501028262/357468-H)
                   </Text>
                 </div>
-                <Text textAlign={isDesktop ? "left" : "center"}>
+                <Text textAlign={isDesktop ? "left" : "center"} fontSize="sm">
                   PT 10786, Seremban 2, 70300 Seremban, Negeri Sembilan.
                 </Text>
               </div>
-              <div className="flex flex-col lg:space-y-5">
+              <div className="flex flex-col">
                 <Text
                   textAlign={isDesktop ? "left" : "center"}
                   fontWeight="semibold"
+                  fontSize="sm"
                 >
                   Contacts
                 </Text>
                 <div className="">
-                  <Text textAlign={isDesktop ? "left" : "center"}>
+                  <Text textAlign={isDesktop ? "left" : "center"} fontSize="sm">
                     Email: sales.s2@ijm.com
                   </Text>
-                  <Text textAlign={isDesktop ? "left" : "center"}>
+                  <Text textAlign={isDesktop ? "left" : "center"} fontSize="sm">
                     Phone: 1800 222 456
                   </Text>
                 </div>
@@ -272,7 +274,7 @@ const RegistrationPage: NextPage = () => {
         </div>
       </Layout>
       <div style={{ backgroundColor: "#3B3539" }}>
-        <div className="container py-10 px-10 mx-auto text-white space-y-5">
+        <div className="container py-10 px-10 lg:px-20 mx-auto text-white space-y-5">
           <Text fontSize="xs">
             Developer: Seremban Two Holdings SdnBhd (199501028262/357468-H) PT
             10786, Seremban 2, 70300 Seremban, Negeri Sembilan. • Developer’s
