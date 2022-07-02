@@ -74,7 +74,10 @@ const Navbar = (): JSX.Element => {
         width={isDesktop ? 380 : 280}
         className={topLeftClassnames}
       />
-      <div className="bg-white h-12 hidden lg:block"></div>
+      <div
+        className="h-12 hidden lg:block"
+        style={{ backgroundImage: `url(/assets/images/bg-web-desktop.png)` }}
+      ></div>
       <div
         style={{ backgroundColor: "#8b5920" }}
         className="relative w-screen text-white flex items-center justify-between"

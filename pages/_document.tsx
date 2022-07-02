@@ -11,7 +11,9 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body
+        style={{ backgroundImage: `url(/assets/images/bg-web-desktop.png)` }}
+      >
         <Main />
         <NextScript />
       </body>
