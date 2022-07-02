@@ -75,7 +75,10 @@ const Navbar = (): JSX.Element => {
         className={topLeftClassnames}
       />
       <div className="bg-white h-12 hidden lg:block"></div>
-      <div className="relative bg-yellow-800 w-screen text-white flex items-center justify-between">
+      <div
+        style={{ backgroundColor: "#8b5920" }}
+        className="relative w-screen text-white flex items-center justify-between"
+      >
         <div className="w-full px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between py-5 relative">
             <div className="w-full lg:w-auto flex flex-grow justify-between items-center">
