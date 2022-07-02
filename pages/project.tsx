@@ -6,6 +6,7 @@ import { Text, useMediaQuery } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/Layout";
+import { Navbar } from "../components/Navbar";
 
 const gridItem = [
   {
@@ -79,7 +80,8 @@ const ProjectPage: NextPage = () => {
         }
         className="mt-20 lg:mt-32 mx-auto w-full"
       />
-      <Layout>
+      <Navbar></Navbar>
+      <div className="container mx-auto lg:px-20 mb-10">
         <div className="flex justify-center my-10 px-5 lg:px-60 2lg:px-80">
           <Text fontSize={isDesktop ? "xl" : "md"} textAlign="center">
             Enrich your life in a new luxurious home built in a harmonious
@@ -124,7 +126,8 @@ const ProjectPage: NextPage = () => {
             })}
           </div>
         </div>
-
+      </div>
+      <div className="container mx-auto lg:px-2 mb-10">
         <Swiper
           pagination={true}
           modules={[Pagination]}
@@ -153,7 +156,8 @@ const ProjectPage: NextPage = () => {
             />
           </SwiperSlide>
         </Swiper>
-
+      </div>
+      <div className="container mx-auto lg:px-20 mb-10">
         <div className="flex justify-start lg:justify-end lg:w-full w-1/2 mt-10 mb-2 mx-5 lg:m-0">
           <img src="/assets/images/page-2/Specifications.png" />
         </div>
@@ -685,7 +689,7 @@ const ProjectPage: NextPage = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
 };
