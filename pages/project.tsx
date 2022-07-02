@@ -281,7 +281,7 @@ const ProjectPage: NextPage = () => {
                 SANITARY FITTINGS
               </Text>
             </div>
-            <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0">
+            <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-2">
               <div className="w-full lg:w-1/3 flex flex-col">
                 <Text fontSize="sm" fontWeight="light">
                   Kitchen
@@ -588,7 +588,7 @@ const ProjectPage: NextPage = () => {
                 EXTERNAL
               </Text>
             </div>
-            <div className="w-3/5 lg:w-3/4 flex">
+            <div className="w-3/5 lg:w-3/4 flex lg:space-x-2">
               <div className="w-1/3 lg:flex flex-col">
                 <Text fontSize="sm" fontWeight="light">
                   Fence
@@ -618,7 +618,7 @@ const ProjectPage: NextPage = () => {
               </Text>
             </div>
             <div className="hidden lg:block lg:w-1/4"></div>
-            <div className="w-3/5 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-0">
+            <div className="w-3/5 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-2">
               <div className="w-full lg:w-1/2 flex flex-col">
                 <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY SEMI D
