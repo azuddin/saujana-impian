@@ -86,37 +86,37 @@ const ProjectPage: NextPage = () => {
             combination of urban and natural settings at Seremban 2.
           </Text>
         </div>
-        <div className="lg:divide-y-2 lg:divide-yellow-800 lg:divide-dashed mb-20">
-          <div className="flex flex-col lg:flex-row lg:divide-x-2 lg:divide-yellow-800 lg:divide-dashed">
+        <div className="lg:divide-y lg:divide-yellow-800 lg:divide-dashed mb-20">
+          <div className="flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
             {gridItem.map((item, k) => {
               return (
                 <div
                   key={k}
                   className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
-                  <img src={item.img} className="mb-5 h-14" />
-                  <Text fontSize="sm" textAlign="center">
+                  <img src={item.img} className="mb-5 h-10" />
+                  <Text fontSize="xs" textAlign="center">
                     {item.line1}
                   </Text>
-                  <Text fontSize="sm" textAlign="center">
+                  <Text fontSize="xs" textAlign="center">
                     {item.line2}
                   </Text>
                 </div>
               );
             })}
           </div>
-          <div className="flex flex-col lg:flex-row lg:divide-x-2 lg:divide-yellow-800 lg:divide-dashed">
+          <div className="flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
             {gridItem2.map((item, k) => {
               return (
                 <div
                   key={k}
                   className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
-                  <img src={item.img} className="mb-5 h-14" />
-                  <Text fontSize="md" textAlign="center">
+                  <img src={item.img} className="mb-5 h-10" />
+                  <Text fontSize="xs" textAlign="center">
                     {item.line1}
                   </Text>
-                  <Text fontSize="md" textAlign="center">
+                  <Text fontSize="xs" textAlign="center">
                     {item.line2}
                   </Text>
                 </div>
