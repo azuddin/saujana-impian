@@ -159,7 +159,10 @@ const ProjectPage: NextPage = () => {
       </div>
       <div className="container mx-auto lg:px-20 mb-10">
         <div className="flex justify-start lg:justify-end lg:w-full w-1/2 mt-10 mb-2 mx-5 lg:m-0">
-          <img src="/assets/images/page-2/Specifications.png" />
+          <img
+            src="/assets/images/page-2/Specifications.png"
+            className="lg:w-64"
+          />
         </div>
 
         <div className="divide-y divide-yellow-800 px-5">
