@@ -36,7 +36,7 @@ const GalleryPage: NextPage = () => {
                 ? "/assets/images/page-5/gallery-img-1@2x.jpg"
                 : "/assets/images/mobile-gallery-1.jpg"
             }
-            className="mb-14 mx-auto"
+            className="mb-14 mx-auto lg:mt-36"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -46,7 +46,7 @@ const GalleryPage: NextPage = () => {
                 ? "/assets/images/page-5/gallery-img-2@2x.jpg"
                 : "/assets/images/mobile-gallery-2.jpg"
             }
-            className="mb-14 mx-auto"
+            className="mb-14 mx-auto lg:mt-36"
           />
         </SwiperSlide>
       </Swiper>

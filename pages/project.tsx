@@ -71,14 +71,16 @@ const ProjectPage: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <img
-        src={
-          isDesktop
-            ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
-            : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
-        }
-        className="mt-20 lg:mt-32 mx-auto w-full"
-      />
+      <div className="container mx-auto lg:px-2 mb-10">
+        <img
+          src={
+            isDesktop
+              ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
+              : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
+          }
+          className="mt-20 lg:mt-32 mx-auto w-full"
+        />
+      </div>
       <Navbar></Navbar>
       <div className="container mx-auto lg:px-20 mb-10">
         <div className="flex justify-center my-10 px-5 lg:px-60 2lg:px-80">
