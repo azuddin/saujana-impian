@@ -1,9 +1,11 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Layout } from "../components/Layout";
+import { Navbar } from "../components/Navbar";
 
 const SitePlanPage: NextPage = () => {
+  const [isDesktop] = useMediaQuery("(min-width: 1024px)");
+
   return (
     <>
       <Head>
@@ -14,25 +16,32 @@ const SitePlanPage: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Navbar></Navbar>
+      <div className="container mx-auto lg:px-2 mb-10">
         <div className="flex flex-col-reverse lg:flex-row pt-44 lg:mt-0">
-          <div className="w-full lg:w-2/3 mt-10 lg:m-0">
-            <img src="/assets/images/page-3/SitePlanImg.png" />
+          <div className="w-full lg:w-4/5 mt-10 lg:m-0">
+            <img
+              src={
+                isDesktop
+                  ? "/assets/images/plan-ada-pokok-desktop.png"
+                  : "/assets/images/plan-ada-pokok-mobile.png"
+              }
+            />
           </div>
-          <div className="flex flex-grow flex-col items-center lg:pt-20 space-y-14">
+          <div className="flex flex-grow flex-col items-center lg:items-start lg:pt-20 space-y-12 lg:pl-10">
             <div className="h-20">
               <img
                 src="/assets/images/page-3/SitePlan@2x.png"
-                className="h-full"
+                className="w-48"
               />
             </div>
             <div className="flex items-center space-x-2">
-              <Text fontSize="xl" className="leading-none">
+              <Text fontSize="lg" className="leading-none">
                 TOTAL
                 <br />
                 UNITS:
               </Text>
-              <Text fontSize="5xl" className="leading-none">
+              <Text fontSize="4xl" className="leading-none">
                 42
               </Text>
             </div>
@@ -52,7 +61,7 @@ const SitePlanPage: NextPage = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
 };
