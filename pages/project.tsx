@@ -98,10 +98,10 @@ const ProjectPage: NextPage = () => {
                   className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
                   <img src={item.img} className="mb-5 h-10" />
-                  <Text fontSize="xs" textAlign="center">
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
                     {item.line1}
                   </Text>
-                  <Text fontSize="xs" textAlign="center">
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
                     {item.line2}
                   </Text>
                 </div>
@@ -116,10 +116,10 @@ const ProjectPage: NextPage = () => {
                   className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
                 >
                   <img src={item.img} className="mb-5 h-10" />
-                  <Text fontSize="xs" textAlign="center">
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
                     {item.line1}
                   </Text>
-                  <Text fontSize="xs" textAlign="center">
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
                     {item.line2}
                   </Text>
                 </div>
@@ -285,7 +285,7 @@ const ProjectPage: NextPage = () => {
                 SANITARY FITTINGS
               </Text>
             </div>
-            <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-2">
+            <div className="w-3/5 lg:w-3/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-3">
               <div className="w-full lg:w-1/3 flex flex-col">
                 <Text fontSize="sm" fontWeight="light">
                   Kitchen
@@ -324,7 +324,7 @@ const ProjectPage: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-full py-5 space-x-2">
+          <div className="flex flex-row w-full py-5 space-x-3">
             <div className="w-2/5 lg:w-1/4">
               <Text fontSize="sm" fontWeight="semibold">
                 ELECTRICAL INSTALLATION WITH THREE PHASE WIRING
@@ -592,7 +592,7 @@ const ProjectPage: NextPage = () => {
                 EXTERNAL
               </Text>
             </div>
-            <div className="w-3/5 lg:w-3/4 flex lg:space-x-2">
+            <div className="w-3/5 lg:w-3/4 flex lg:space-x-3">
               <div className="w-1/3 lg:flex flex-col">
                 <Text fontSize="sm" fontWeight="light">
                   Fence
@@ -622,7 +622,7 @@ const ProjectPage: NextPage = () => {
               </Text>
             </div>
             <div className="hidden lg:block lg:w-1/4"></div>
-            <div className="w-3/5 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-2">
+            <div className="w-3/5 lg:w-2/4 lg:flex space-y-5 lg:space-y-0 lg:space-x-3">
               <div className="w-full lg:w-1/2 flex flex-col">
                 <Text fontSize="sm" fontWeight="semibold">
                   2 - STOREY SEMI D
