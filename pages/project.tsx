@@ -71,7 +71,7 @@ const ProjectPage: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container mx-auto lg:px-2 mb-10">
+      <div className="lg:px-20 mb-10">
         <img
           src={
             isDesktop
