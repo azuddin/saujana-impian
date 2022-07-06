@@ -126,7 +126,11 @@ const Navbar = (): JSX.Element => {
                 })}
               </div>
               <div className="lg:absolute right-0 z-10 flex mt-4 lg:mt-0">
-                <Link passHref href="/">
+                <Link
+                  passHref
+                  href="https://www.facebook.com/ijmlandseremban2"
+                  target="_blank"
+                >
                   <IconButton
                     variant="link"
                     aria-label="facebook"
@@ -140,7 +144,11 @@ const Navbar = (): JSX.Element => {
                     }
                   ></IconButton>
                 </Link>
-                <Link passHref href="/">
+                <Link
+                  passHref
+                  href="https://wa.me/60139287388?text=I%20am%20interested%20to%20know%20about%20Seremban%202%20Heights%20Saujana%20Intan"
+                  target="_blank"
+                >
                   <IconButton
                     variant="link"
                     aria-label="whatsapp"
@@ -154,7 +162,11 @@ const Navbar = (): JSX.Element => {
                     }
                   ></IconButton>
                 </Link>
-                <Link passHref href="/">
+                <Link
+                  passHref
+                  href="https://www.youtube.com/user/IJMLandBerhad"
+                  target="_blank"
+                >
                   <IconButton
                     variant="link"
                     aria-label="youtube"
