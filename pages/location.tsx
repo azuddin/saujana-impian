@@ -38,7 +38,7 @@ const LocationPage: NextPage = () => {
                     ? "/assets/images/page-4/fasilities.png"
                     : isTablet
                     ? "/assets/images/page-2/Tablet-fasilities.png"
-                    : "/assets/images/page-2/Fasilities@2x.jpg"
+                    : "/assets/images/page-2/Fasilities@2x.png"
                 }
               />
             </div>
