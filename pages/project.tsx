@@ -90,7 +90,29 @@ const ProjectPage: NextPage = () => {
           </Text>
         </div>
         <div className="lg:divide-y lg:divide-yellow-800 lg:divide-dashed mb-20">
-          <div className="flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
+          <div className="hidden md:grid lg:hidden grid-cols-3 divide-x divide-y divide-yellow-800 divide-dashed">
+            {[...gridItem, ...gridItem2].map((item, k) => {
+              return (
+                <div
+                  key={k}
+                  style={{
+                    borderTop: [1, 2].includes(k) ? 0 : undefined,
+                    borderLeft: [3, 6].includes(k) ? 0 : undefined,
+                  }}
+                  className="flex flex-1 flex-grow flex-col justify-center items-center p-5"
+                >
+                  <img src={item.img} className="mb-5 h-10" />
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
+                    {item.line1}
+                  </Text>
+                  <Text fontSize="xs" textAlign="center" lineHeight="shorter">
+                    {item.line2}
+                  </Text>
+                </div>
+              );
+            })}
+          </div>
+          <div className="flex md:hidden lg:flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
             {gridItem.map((item, k) => {
               return (
                 <div
@@ -108,7 +130,7 @@ const ProjectPage: NextPage = () => {
               );
             })}
           </div>
-          <div className="flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
+          <div className="flex md:hidden lg:flex flex-col lg:flex-row lg:divide-x lg:divide-yellow-800 lg:divide-dashed">
             {gridItem2.map((item, k) => {
               return (
                 <div

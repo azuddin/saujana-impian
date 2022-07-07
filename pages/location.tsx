@@ -5,6 +5,7 @@ import { Navbar } from "../components/Navbar";
 
 const LocationPage: NextPage = () => {
   const [isDesktop] = useMediaQuery("(min-width: 1024px)");
+  const [isTablet] = useMediaQuery("(min-width: 768px)");
 
   return (
     <>
@@ -35,6 +36,8 @@ const LocationPage: NextPage = () => {
                 src={
                   isDesktop
                     ? "/assets/images/page-4/fasilities.png"
+                    : isTablet
+                    ? "/assets/images/page-2/Tablet-fasilities.png"
                     : "/assets/images/page-2/Fasilities@2x.jpg"
                 }
               />
