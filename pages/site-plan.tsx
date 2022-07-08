@@ -31,7 +31,11 @@ const SitePlanPage: NextPage = () => {
           <div className="flex flex-grow flex-col items-center lg:items-start lg:pt-20 space-y-12 lg:pl-10">
             <div className="h-20">
               <img
-                src="/assets/images/page-3/SitePlan@2x.png"
+                src={
+                  isDesktop
+                    ? "/assets/images/page-3/SitePlan@2x.png"
+                    : "/assets/images/page-3/Mobile-Saujana Intan_SiteMap.svg"
+                }
                 className="w-48"
               />
             </div>
