@@ -24,18 +24,14 @@ const SitePlanPage: NextPage = () => {
               src={
                 isDesktop
                   ? "/assets/images/plan-ada-pokok-desktop.png"
-                  : "/assets/images/plan-ada-pokok-mobile.png"
+                  : "/assets/images/page-3/Mobile-Saujana Intan_SiteMap.svg"
               }
             />
           </div>
           <div className="flex flex-grow flex-col items-center lg:items-start lg:pt-20 space-y-12 lg:pl-10">
             <div className="h-20">
               <img
-                src={
-                  isDesktop
-                    ? "/assets/images/page-3/SitePlan@2x.png"
-                    : "/assets/images/page-3/Mobile-Saujana Intan_SiteMap.svg"
-                }
+                src="/assets/images/page-3/SitePlan@2x.png"
                 className="w-48"
               />
             </div>
