@@ -5,6 +5,7 @@ import { Navbar } from "../components/Navbar";
 
 const SitePlanPage: NextPage = () => {
   const [isDesktop] = useMediaQuery("(min-width: 1024px)");
+  const [isTablet] = useMediaQuery("(min-width: 768px)");
 
   return (
     <>
@@ -25,6 +26,8 @@ const SitePlanPage: NextPage = () => {
               src={
                 isDesktop
                   ? "/assets/images/plan-ada-pokok-desktop.png"
+                  : isTablet
+                  ? "/assets/images/page-3/Tablet-Saujana-Intan_SiteMap.svg"
                   : "/assets/images/page-3/Mobile-Saujana Intan_SiteMap.svg"
               }
             />
