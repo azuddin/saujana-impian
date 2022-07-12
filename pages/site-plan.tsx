@@ -21,6 +21,7 @@ const SitePlanPage: NextPage = () => {
         <div className="flex flex-col-reverse lg:flex-row pt-44 lg:mt-0">
           <div className="w-full lg:w-4/5 mt-10 lg:m-0">
             <img
+              className="mx-auto"
               src={
                 isDesktop
                   ? "/assets/images/plan-ada-pokok-desktop.png"
