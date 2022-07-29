@@ -19,10 +19,10 @@ const RegistrationPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Registration - Saujana Impian @ Seremban 2 Height</title>
+        <title>Registration - Saujana Intan @ Seremban 2 Height</title>
         <meta
           name="description"
-          content="Registration - Saujana Impian @ Seremban 2 Height"
+          content="Registration - Saujana Intan @ Seremban 2 Height"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -10,10 +10,10 @@ const LocationPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Location - Saujana Impian @ Seremban 2 Height</title>
+        <title>Location - Saujana Intan @ Seremban 2 Height</title>
         <meta
           name="description"
-          content="Location - Saujana Impian @ Seremban 2 Height"
+          content="Location - Saujana Intan @ Seremban 2 Height"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -13,10 +13,10 @@ const GalleryPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Gallery - Saujana Impian @ Seremban 2 Height</title>
+        <title>Gallery - Saujana Intan @ Seremban 2 Height</title>
         <meta
           name="description"
-          content="Gallery - Saujana Impian @ Seremban 2 Height"
+          content="Gallery - Saujana Intan @ Seremban 2 Height"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

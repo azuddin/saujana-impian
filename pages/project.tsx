@@ -64,10 +64,10 @@ const ProjectPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Project - Saujana Impian @ Seremban 2 Height</title>
+        <title>Project - Saujana Intan @ Seremban 2 Height</title>
         <meta
           name="description"
-          content="Project - Saujana Impian @ Seremban 2 Height"
+          content="Project - Saujana Intan @ Seremban 2 Height"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

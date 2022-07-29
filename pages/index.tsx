@@ -13,8 +13,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Saujana Impian @ Seremban 2 Height</title>
-        <meta name="description" content="Saujana Impian @ Seremban 2 Height" />
+        <title>Saujana Intan @ Seremban 2 Height</title>
+        <meta name="description" content="Saujana Intan @ Seremban 2 Height" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
