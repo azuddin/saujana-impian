@@ -11,19 +11,19 @@ const menu = [
   },
   {
     label: "PROJECT",
-    url: "/project",
+    url: "#project",
   },
   {
     label: "SITE PLAN",
-    url: "/site-plan",
+    url: "#site-plan",
   },
   {
     label: "LOCATION",
-    url: "/location",
+    url: "#location",
   },
   {
     label: "GALLERY",
-    url: "/gallery",
+    url: "#gallery",
   },
   {
     label: "E-BROCHURE",
@@ -32,7 +32,7 @@ const menu = [
   },
   {
     label: "REGISTRATION",
-    url: "/registration",
+    url: "#registration",
   },
 ];
 
@@ -109,9 +109,10 @@ const Navbar = (): JSX.Element => {
             <div className="w-full lg:w-auto hidden lg:flex flex-col lg:flex-row justify-between lg:items-center pt-5 lg:pt-0">
               <div className="w-full lg:w-auto flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-5 mr-36">
                 {menu.map((m, k) => {
-                  const isActive = m.url === currentUrl;
+                  const currUrl = m.url === "/" ? "/" : `/${m.url}`;
+                  const isActive = currUrl === currentUrl;
                   return (
-                    <Link href={m.url} key={m.url} passHref>
+                    <Link href={m.url} key={m.url} passHref scroll>
                       <Text
                         fontWeight="semibold"
                         color={isActive ? "#FFFFFF" : "#C5AB90"}

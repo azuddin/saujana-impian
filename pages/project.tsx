@@ -71,6 +71,7 @@ const ProjectPage: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar></Navbar>
       <div className="lg:px-20 mb-10">
         <img
           src={
@@ -81,7 +82,6 @@ const ProjectPage: NextPage = () => {
           className="mt-20 lg:mt-32 mx-auto w-full"
         />
       </div>
-      <Navbar></Navbar>
       <div className="container mx-auto lg:px-20 mb-10">
         <div className="flex justify-center my-10 px-5 lg:px-60 2lg:px-80">
           <Text fontSize={isDesktop ? "xl" : "md"} textAlign="center">
