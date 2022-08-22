@@ -83,7 +83,9 @@ const Home: NextPage = () => {
       <Navbar></Navbar>
       <Swiper
         className="mt-24 lg:mt-0"
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
         modules={[Pagination]}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
@@ -201,7 +203,9 @@ const Home: NextPage = () => {
         </div>
         <div className="container mx-auto lg:px-2 mb-10">
           <Swiper
-            pagination={true}
+            pagination={{
+              clickable: true,
+            }}
             modules={[Pagination]}
             slidesPerView={1}
             onSlideChange={() => console.log("slide change")}
@@ -854,7 +858,9 @@ const Home: NextPage = () => {
       <div id="gallery">
         <Swiper
           className="mt-20 lg:mt-0"
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
           modules={[Pagination]}
           slidesPerView={1}
           onSlideChange={() => console.log("slide change")}

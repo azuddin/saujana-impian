@@ -152,7 +152,9 @@ const ProjectPage: NextPage = () => {
       </div>
       <div className="container mx-auto lg:px-2 mb-10">
         <Swiper
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
           modules={[Pagination]}
           slidesPerView={1}
           onSlideChange={() => console.log("slide change")}

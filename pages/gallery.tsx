@@ -23,7 +23,9 @@ const GalleryPage: NextPage = () => {
       <Navbar></Navbar>
       <Swiper
         className="mt-20 lg:mt-0"
-        pagination={true}
+        pagination={{
+          clickable: true,
+        }}
         modules={[Pagination]}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
