@@ -100,7 +100,7 @@ const Navbar = (): JSX.Element => {
       timeout = setTimeout(() => {
         idiedDiv = getCurrentId();
         window.addEventListener("scroll", () => handleScroll(idiedDiv));
-      }, 1000);
+      }, 3000);
     }
 
     router.events.on("routeChangeStart", handleRouteChange);
