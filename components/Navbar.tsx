@@ -55,13 +55,13 @@ const getCurrentId = (): any => {
 
       if (s > 0) {
         min_s = i === 0 ? 0 : prev_s_height;
-        max_s = s + prev_s_height;
+        max_s = s + prev_s_height - 1;
       }
 
       prev_s_height += s;
 
       return {
-        minScrollPos: Math.ceil(min_s + 1),
+        minScrollPos: Math.ceil(min_s),
         maxScrollPos: Math.ceil(max_s),
         scrollHeight: s,
         ...m,
@@ -91,7 +91,7 @@ const Navbar = (): JSX.Element => {
     const handleScroll = (idiedDiv: any) => {
       const currScroll = document.documentElement.scrollTop;
       const currID = idiedDiv.filter(
-        (i: any) => currScroll < i.maxScrollPos && currScroll >= i.minScrollPos
+        (i: any) => currScroll <= i.maxScrollPos && currScroll >= i.minScrollPos
       );
       setCurrentUrl(currID[0]?.url || "/");
     };
