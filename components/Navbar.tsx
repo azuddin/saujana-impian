@@ -49,6 +49,7 @@ const getCurrentId = (): any => {
         s =
           document.getElementById(`${m.url.replace("#", "")}`)?.scrollHeight ||
           0;
+        if (s > 0) s -= 1;
       } else {
         s = document.getElementById(`home`)?.scrollHeight || 0;
       }
