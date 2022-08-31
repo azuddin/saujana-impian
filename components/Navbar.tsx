@@ -90,7 +90,7 @@ const Navbar = (): JSX.Element => {
     };
 
     const handleScroll = (idiedDiv: any) => {
-      const currScroll = document.documentElement.scrollTop;
+      const currScroll = Math.ceil(document.documentElement.scrollTop);
       const currID = idiedDiv.filter(
         (i: any) => currScroll <= i.maxScrollPos && currScroll >= i.minScrollPos
       );
