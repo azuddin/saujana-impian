@@ -36,9 +36,42 @@ const menu = [
   },
 ];
 
+const getCurrentId = (): any => {
+  let prev_s_height = 0;
+  return menu
+    .filter((m) => m.target === undefined)
+    .map((m, i) => {
+      let s = 0,
+        min_s = 0,
+        max_s = 0;
+
+      if (m.url !== "/") {
+        s =
+          document.getElementById(`${m.url.replace("#", "")}`)?.scrollHeight ||
+          0;
+      } else {
+        s = document.getElementById(`home`)?.scrollHeight || 0;
+      }
+
+      if (s > 0) {
+        min_s = i === 0 ? 0 : prev_s_height;
+        max_s = s + prev_s_height;
+      }
+
+      prev_s_height += s;
+
+      return {
+        minScrollPos: Math.ceil(min_s + 1),
+        maxScrollPos: Math.ceil(max_s),
+        scrollHeight: s,
+        ...m,
+      };
+    });
+};
+
 const Navbar = (): JSX.Element => {
   const router = useRouter();
-  const currentUrl = router.asPath;
+  const [currentUrl, setCurrentUrl] = useState(router.asPath);
   const [openMenu, setOpenMenu] = useState(false);
 
   const [isDesktop] = useMediaQuery("(min-width: 1024px)");
@@ -48,14 +81,34 @@ const Navbar = (): JSX.Element => {
   };
 
   useEffect(() => {
+    let timeout: any;
+    let idiedDiv: any;
+
     const handleRouteChange = () => {
       setOpenMenu(false);
     };
+
+    const handleScroll = (idiedDiv: any) => {
+      const currScroll = document.documentElement.scrollTop;
+      const currID = idiedDiv.filter(
+        (i: any) => currScroll < i.maxScrollPos && currScroll >= i.minScrollPos
+      );
+      setCurrentUrl(currID[0]?.url || "/");
+    };
+
+    if (window) {
+      timeout = setTimeout(() => {
+        idiedDiv = getCurrentId();
+        window.addEventListener("scroll", () => handleScroll(idiedDiv));
+      }, 1000);
+    }
 
     router.events.on("routeChangeStart", handleRouteChange);
 
     return () => {
       router.events.off("routeChangeStart", handleRouteChange);
+      window.removeEventListener("scroll", () => handleScroll(idiedDiv));
+      clearTimeout(timeout);
     };
   }, []);
 
@@ -109,8 +162,7 @@ const Navbar = (): JSX.Element => {
             <div className="w-full lg:w-auto hidden lg:flex flex-col lg:flex-row justify-between lg:items-center pt-5 lg:pt-0">
               <div className="w-full lg:w-auto flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-5 mr-36">
                 {menu.map((m, k) => {
-                  const currUrl = m.url === "/" ? "/" : `/${m.url}`;
-                  const isActive = currUrl === currentUrl;
+                  const isActive = m.url === currentUrl;
                   return (
                     <Link href={m.url} key={m.url} passHref scroll>
                       <Text

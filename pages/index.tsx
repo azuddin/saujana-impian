@@ -81,47 +81,49 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-      <Swiper
-        className="mt-24 lg:mt-0"
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>
-          <img
-            className="mx-auto lg:mt-36"
-            src={
-              isDesktop
-                ? "/assets/images/banner/slider1b.png"
-                : "/assets/images/Slider-1@2x.jpg"
-            }
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="mx-auto lg:mt-36"
-            src={
-              isDesktop
-                ? "/assets/images/banner/slider2b.png"
-                : "/assets/images/Slider-2@2x.jpg"
-            }
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="mx-auto lg:mt-36"
-            src={
-              isDesktop
-                ? "/assets/images/banner/slider3b.png"
-                : "/assets/images/Slider-3@2x.jpg"
-            }
-          />
-        </SwiperSlide>
-      </Swiper>
+      <div id="home">
+        <Swiper
+          className="mt-24 lg:mt-0"
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          slidesPerView={1}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <img
+              className="mx-auto lg:mt-36"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider1b.png"
+                  : "/assets/images/Slider-1@2x.jpg"
+              }
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="mx-auto lg:mt-36"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider2b.png"
+                  : "/assets/images/Slider-2@2x.jpg"
+              }
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              className="mx-auto lg:mt-36"
+              src={
+                isDesktop
+                  ? "/assets/images/banner/slider3b.png"
+                  : "/assets/images/Slider-3@2x.jpg"
+              }
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <div id="project">
         <div className="lg:px-20 mb-10">
           <img
