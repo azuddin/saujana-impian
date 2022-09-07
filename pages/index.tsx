@@ -1235,6 +1235,7 @@ const Home: NextPage = () => {
                     variant="flushed"
                     borderColor="#794515"
                     focusBorderColor="#794515"
+                    placeholder="eg. 123456789"
                   />
                 </div>
               </FormControl>
