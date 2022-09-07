@@ -1140,7 +1140,7 @@ const Home: NextPage = () => {
                   Full Name
                 </FormLabel>
                 <Input
-                  fontSize="2xl"
+                  fontSize="md"
                   id="fullname"
                   type="text"
                   variant="flushed"
@@ -1163,7 +1163,7 @@ const Home: NextPage = () => {
                   Project Name
                 </FormLabel>
                 <Input
-                  fontSize="2xl"
+                  fontSize="md"
                   id="project_name"
                   type="text"
                   variant="flushed"
@@ -1186,7 +1186,7 @@ const Home: NextPage = () => {
                   Email
                 </FormLabel>
                 <Input
-                  fontSize="2xl"
+                  fontSize="md"
                   id="email"
                   type="email"
                   variant="flushed"
@@ -1229,7 +1229,7 @@ const Home: NextPage = () => {
                     })}
                   </Select>
                   <Input
-                    fontSize="2xl"
+                    fontSize="md"
                     id="mobile_number"
                     type="text"
                     variant="flushed"
