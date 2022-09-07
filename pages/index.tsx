@@ -1241,29 +1241,6 @@ const Home: NextPage = () => {
 
               <FormControl
                 isRequired
-                className="flex items-start justify-center flex-col lg:flex-row lg:items-end"
-              >
-                <FormLabel
-                  htmlFor="mobile_country_code"
-                  sx={{ padding: 0, margin: 0 }}
-                  className="w-60"
-                  fontWeight="light"
-                  fontSize="md"
-                >
-                  Mobile Country Code
-                </FormLabel>
-                <Input
-                  fontSize="2xl"
-                  id="mobile_country_code"
-                  type="text"
-                  variant="flushed"
-                  borderColor="#794515"
-                  focusBorderColor="#794515"
-                />
-              </FormControl>
-
-              <FormControl
-                isRequired
                 className="flex items-start flex-col lg:flex-row lg:items-end"
               >
                 <FormLabel
