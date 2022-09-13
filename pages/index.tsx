@@ -1169,6 +1169,7 @@ const Home: NextPage = () => {
                   variant="flushed"
                   borderColor="#794515"
                   focusBorderColor="#794515"
+                  defaultValue="Saujana Intan"
                 />
               </FormControl>
 
@@ -1215,14 +1216,11 @@ const Home: NextPage = () => {
                     variant="flushed"
                     borderColor="#794515"
                     focusBorderColor="#794515"
+                    defaultValue="Malaysia (60)"
                   >
                     {MOBILE_COUNTRY_CODE.map((code) => {
                       return (
-                        <option
-                          value={code}
-                          key={code}
-                          selected={code === "Malaysia (60)"}
-                        >
+                        <option value={code} key={code}>
                           {code}
                         </option>
                       );
