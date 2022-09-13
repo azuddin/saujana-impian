@@ -1000,10 +1000,10 @@ const Home: NextPage = () => {
                 className="mx-auto"
                 src={
                   isDesktop
-                    ? "/assets/images/plan-ada-pokok-desktop.png"
+                    ? "/assets/images/site-plans/Saujana-Intan_SiteMap-2.svg"
                     : isTablet
-                    ? "/assets/images/page-3/Tablet-Saujana-Intan_SiteMap.svg"
-                    : "/assets/images/page-3/Mobile-Saujana Intan_SiteMap.svg"
+                    ? "/assets/images/site-plans/Tablet-Saujana-Intan_SiteMap.svg"
+                    : "/assets/images/site-plans/Mobile-Saujana-Intan_SiteMap.svg"
                 }
               />
             </div>
