@@ -1000,10 +1000,10 @@ const Home: NextPage = () => {
                 className="mx-auto"
                 src={
                   isDesktop
-                    ? "/assets/images/site-plans/Saujana-Intan_SiteMap-2.svg"
+                    ? "/assets/images/site-plans/Saujana Intan_SiteMap-2-01.svg"
                     : isTablet
-                    ? "/assets/images/site-plans/Tablet-Saujana-Intan_SiteMap.svg"
-                    : "/assets/images/site-plans/Mobile-Saujana-Intan_SiteMap.svg"
+                    ? "/assets/images/site-plans/Tablet-Saujana Intan_SiteMap-01.svg"
+                    : "/assets/images/site-plans/Mobile-Saujana Intan_SiteMap-01.svg"
                 }
               />
             </div>
@@ -1060,10 +1060,10 @@ const Home: NextPage = () => {
                   className="mx-auto"
                   src={
                     isDesktop
-                      ? "/assets/images/page-4/fasilities.png"
+                      ? "/assets/images/location/facilities/Places@2x.jpg"
                       : isTablet
-                      ? "/assets/images/page-2/Tablet-fasilities.png"
-                      : "/assets/images/page-2/Fasilities@2x.png"
+                      ? "/assets/images/location/facilities/Tablet-fasilities@2x.jpg"
+                      : "/assets/images/location/facilities/Fasilities@2x.jpg"
                   }
                 />
               </div>
