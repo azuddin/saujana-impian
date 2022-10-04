@@ -1368,33 +1368,39 @@ const Home: NextPage = () => {
                 href="https://www.facebook.com/ijmlandseremban2"
                 target="_blank"
               >
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={<img src="/assets/images/page-5/iconfacebook.svg" />}
-                ></IconButton>
+                <a target="_blank" rel="noreferrer">
+                  <IconButton
+                    variant="link"
+                    aria-label="facebook"
+                    icon={<img src="/assets/images/page-5/iconfacebook.svg" />}
+                  ></IconButton>
+                </a>
               </Link>
               <Link
                 passHref
                 href="https://wa.me/60139287388?text=I%20am%20interested%20to%20know%20about%20Seremban%202%20Heights%20Saujana%20Intan"
                 target="_blank"
               >
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={<img src="/assets/images/page-5/iconwhatsapp.svg" />}
-                ></IconButton>
+                <a target="_blank" rel="noreferrer">
+                  <IconButton
+                    variant="link"
+                    aria-label="facebook"
+                    icon={<img src="/assets/images/page-5/iconwhatsapp.svg" />}
+                  ></IconButton>
+                </a>
               </Link>
               <Link
                 passHref
                 href="https://www.youtube.com/user/IJMLandBerhad"
                 target="_blank"
               >
-                <IconButton
-                  variant="link"
-                  aria-label="facebook"
-                  icon={<img src="/assets/images/page-5/iconyoutube.svg" />}
-                ></IconButton>
+                <a target="_blank" rel="noreferrer">
+                  <IconButton
+                    variant="link"
+                    aria-label="facebook"
+                    icon={<img src="/assets/images/page-5/iconyoutube.svg" />}
+                  ></IconButton>
+                </a>
               </Link>
             </div>
           </div>
