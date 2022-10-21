@@ -9,7 +9,7 @@ const Logo = (): JSX.Element => {
     >
       <div className="flex flex-col items-center overflow-hidden">
         <div className="w-24">
-          <img src="/assets/images/logo-1.svg" width={140} />
+          <img src="./assets/images/logo-1.svg" width={140} />
         </div>
         <Text fontSize="xx-small" className="truncate ">
           @ SEREMBAN 2 HEIGHTS

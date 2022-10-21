@@ -124,7 +124,7 @@ const Navbar = (): JSX.Element => {
   return (
     <div className="top-0 z-50 fixed">
       <img
-        src="/assets/images/top-left.svg"
+        src="./assets/images/top-left.svg"
         width={isDesktop ? 380 : 280}
         className={topLeftClassnames}
       />
@@ -190,7 +190,7 @@ const Navbar = (): JSX.Element => {
                       }}
                       icon={
                         <img
-                          src="/assets/images/icon-facebook.svg"
+                          src="./assets/images/icon-facebook.svg"
                           width={20}
                           height={20}
                         />
@@ -212,7 +212,7 @@ const Navbar = (): JSX.Element => {
                       }}
                       icon={
                         <img
-                          src="/assets/images/icon-whatsapp.svg"
+                          src="./assets/images/icon-whatsapp.svg"
                           width={20}
                           height={20}
                         />
@@ -234,7 +234,7 @@ const Navbar = (): JSX.Element => {
                       }}
                       icon={
                         <img
-                          src="/assets/images/icon-youtube.svg"
+                          src="./assets/images/icon-youtube.svg"
                           width={20}
                           height={20}
                         />
@@ -246,7 +246,7 @@ const Navbar = (): JSX.Element => {
             </div>
           </div>
           <div className="absolute top-0 right-0 w-48 hidden lg:flex items-end justify-end">
-            <img src="/assets/images/top-right.svg" width={250} />
+            <img src="./assets/images/top-right.svg" width={250} />
           </div>
         </div>
       </div>
