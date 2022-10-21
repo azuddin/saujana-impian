@@ -12,7 +12,7 @@ export default function Document() {
         />
       </Head>
       <body
-        style={{ backgroundImage: `url(/assets/images/bg-web-desktop.png)` }}
+        style={{ backgroundImage: `url(./assets/images/bg-web-desktop.png)` }}
       >
         <Main />
         <NextScript />

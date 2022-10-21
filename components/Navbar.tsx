@@ -130,7 +130,7 @@ const Navbar = (): JSX.Element => {
       />
       <div
         className="h-12 hidden lg:block"
-        style={{ backgroundImage: `url(/assets/images/bg-web-desktop.png)` }}
+        style={{ backgroundImage: `url(./assets/images/bg-web-desktop.png)` }}
       ></div>
       <div
         style={{ backgroundColor: "#8b5920" }}
