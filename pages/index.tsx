@@ -24,22 +24,22 @@ import Link from "next/link";
 
 const gridItem = [
   {
-    img: "/assets/images/page-2/icon.svg",
+    img: "./assets/images/page-2/icon.svg",
     line1: "PANORAMIC VIEW",
     line2: "FROM HIGHER GROUND",
   },
   {
-    img: "/assets/images/page-2/icon-1.svg",
+    img: "./assets/images/page-2/icon-1.svg",
     line1: "PRACTICAL",
     line2: "LAYOUT",
   },
   {
-    img: "/assets/images/page-2/icon-2.svg",
+    img: "./assets/images/page-2/icon-2.svg",
     line1: "LOW",
     line2: "DENSITY",
   },
   {
-    img: "/assets/images/page-2/icon-3.svg",
+    img: "./assets/images/page-2/icon-3.svg",
     line1: "NATURALLY",
     line2: "COOL AIR",
   },
@@ -47,27 +47,27 @@ const gridItem = [
 
 const gridItem2 = [
   {
-    img: "/assets/images/page-2/icon-4.svg",
+    img: "./assets/images/page-2/icon-4.svg",
     line1: "GUARDED",
     line2: "COMMUNITY",
   },
   {
-    img: "/assets/images/page-2/icon-5.svg",
+    img: "./assets/images/page-2/icon-5.svg",
     line1: "SOLAR WATER",
     line2: "HEATING SYSTEM",
   },
   {
-    img: "/assets/images/page-2/icon-6.svg",
+    img: "./assets/images/page-2/icon-6.svg",
     line1: "DIGITAL",
     line2: "CLOCK",
   },
   {
-    img: "/assets/images/page-2/icon-7.svg",
+    img: "./assets/images/page-2/icon-7.svg",
     line1: "RAIN WATER",
     line2: "HARVESTING SYSTEM",
   },
   {
-    img: "/assets/images/page-2/icon-8.svg",
+    img: "./assets/images/page-2/icon-8.svg",
     line1: "RECREATIONAL",
     line2: "PARK",
   },
@@ -317,8 +317,8 @@ const Home: NextPage = () => {
               className="mx-auto lg:mt-36"
               src={
                 isDesktop
-                  ? "/assets/images/banner/slider1b.png"
-                  : "/assets/images/Slider-1@2x.jpg"
+                  ? "./assets/images/banner/slider1b.png"
+                  : "./assets/images/Slider-1@2x.jpg"
               }
             />
           </SwiperSlide>
@@ -327,8 +327,8 @@ const Home: NextPage = () => {
               className="mx-auto lg:mt-36"
               src={
                 isDesktop
-                  ? "/assets/images/banner/slider2b.png"
-                  : "/assets/images/Slider-2@2x.jpg"
+                  ? "./assets/images/banner/slider2b.png"
+                  : "./assets/images/Slider-2@2x.jpg"
               }
             />
           </SwiperSlide>
@@ -337,8 +337,8 @@ const Home: NextPage = () => {
               className="mx-auto lg:mt-36"
               src={
                 isDesktop
-                  ? "/assets/images/banner/slider3b.png"
-                  : "/assets/images/Slider-3@2x.jpg"
+                  ? "./assets/images/banner/slider3b.png"
+                  : "./assets/images/Slider-3@2x.jpg"
               }
             />
           </SwiperSlide>
@@ -349,8 +349,8 @@ const Home: NextPage = () => {
           <img
             src={
               isDesktop
-                ? "/assets/images/welcome-to-a-breathtaking-2.jpeg"
-                : "/assets/images/Welcome-to-a-breathtaking@2x.jpg"
+                ? "./assets/images/welcome-to-a-breathtaking-2.jpeg"
+                : "./assets/images/Welcome-to-a-breathtaking@2x.jpg"
             }
             className="pt-20 lg:pt-32 mx-auto w-full"
           />
@@ -438,8 +438,8 @@ const Home: NextPage = () => {
                 className="w-screen mb-20"
                 src={
                   isDesktop
-                    ? "/assets/images/page-2/Desktop-Semi-d-floor-plan.png"
-                    : "/assets/images/page-2/Semi-d-floor plan@2x.jpg"
+                    ? "./assets/images/page-2/Desktop-Semi-d-floor-plan.png"
+                    : "./assets/images/page-2/Semi-d-floor plan@2x.jpg"
                 }
               />
             </SwiperSlide>
@@ -448,8 +448,8 @@ const Home: NextPage = () => {
                 className="w-screen mb-20"
                 src={
                   isDesktop
-                    ? "/assets/images/page-2/Desktop-Bungalow-floor-plan.png"
-                    : "/assets/images/page-2/Bungalow-floor-plan@2x.jpg"
+                    ? "./assets/images/page-2/Desktop-Bungalow-floor-plan.png"
+                    : "./assets/images/page-2/Bungalow-floor-plan@2x.jpg"
                 }
               />
             </SwiperSlide>
@@ -458,7 +458,7 @@ const Home: NextPage = () => {
         <div className="container mx-auto lg:px-20 mb-10">
           <div className="flex justify-start lg:justify-end lg:w-full w-1/2 mt-10 mb-2 mx-5 lg:m-0">
             <img
-              src="/assets/images/page-2/Specifications.png"
+              src="./assets/images/page-2/Specifications.png"
               className="lg:w-64"
             />
           </div>
@@ -1000,17 +1000,17 @@ const Home: NextPage = () => {
                 className="mx-auto"
                 src={
                   isDesktop
-                    ? "/assets/images/site-plans/Saujana Intan_SiteMap-Outline-3.svg"
+                    ? "./assets/images/site-plans/Saujana Intan_SiteMap-Outline-3.svg"
                     : isTablet
-                    ? "/assets/images/site-plans/Tablet-Saujana Intan_SiteMap-Outline-3.svg"
-                    : "/assets/images/site-plans/Mobile-Saujana Intan_SiteMap-Outline-3.svg"
+                    ? "./assets/images/site-plans/Tablet-Saujana Intan_SiteMap-Outline-3.svg"
+                    : "./assets/images/site-plans/Mobile-Saujana Intan_SiteMap-Outline-3.svg"
                 }
               />
             </div>
             <div className="flex flex-grow flex-col items-center lg:items-start lg:pt-20 space-y-12 lg:pl-10">
               <div className="h-20">
                 <img
-                  src="/assets/images/page-3/SitePlan@2x.png"
+                  src="./assets/images/page-3/SitePlan@2x.png"
                   className="w-48"
                 />
               </div>
@@ -1047,7 +1047,7 @@ const Home: NextPage = () => {
           <div className="container mx-auto lg:px-20 mb-10">
             <div className="h-20 mt-0 lg:mt-10 mb-10 ">
               <img
-                src="/assets/images/page-4/LocationMap@2x.png"
+                src="./assets/images/page-4/LocationMap@2x.png"
                 className="h-full mx-auto lg:ml-10"
               />
             </div>
@@ -1060,17 +1060,17 @@ const Home: NextPage = () => {
                   className="mx-auto"
                   src={
                     isDesktop
-                      ? "/assets/images/location/facilities/Places@2x.jpg"
+                      ? "./assets/images/location/facilities/Places@2x.jpg"
                       : isTablet
-                      ? "/assets/images/location/facilities/Tablet-fasilities@2x.jpg"
-                      : "/assets/images/location/facilities/Fasilities@2x.jpg"
+                      ? "./assets/images/location/facilities/Tablet-fasilities@2x.jpg"
+                      : "./assets/images/location/facilities/Fasilities@2x.jpg"
                   }
                 />
               </div>
               <div className="flex-1 ">
                 <img
                   className="mx-auto"
-                  src="/assets/images/page-4/Map@2x.png"
+                  src="./assets/images/page-4/Map@2x.png"
                 />
               </div>
             </div>
@@ -1092,8 +1092,8 @@ const Home: NextPage = () => {
             <img
               src={
                 isDesktop
-                  ? "/assets/images/page-5/gallery-img-1@2x.jpg"
-                  : "/assets/images/mobile-gallery-1.jpg"
+                  ? "./assets/images/page-5/gallery-img-1@2x.jpg"
+                  : "./assets/images/mobile-gallery-1.jpg"
               }
               className="mb-14 mx-auto lg:mt-36"
             />
@@ -1102,8 +1102,8 @@ const Home: NextPage = () => {
             <img
               src={
                 isDesktop
-                  ? "/assets/images/page-5/gallery-img-2@2x.jpg"
-                  : "/assets/images/mobile-gallery-2.jpg"
+                  ? "./assets/images/page-5/gallery-img-2@2x.jpg"
+                  : "./assets/images/mobile-gallery-2.jpg"
               }
               className="mb-14 mx-auto lg:mt-36"
             />
@@ -1115,13 +1115,13 @@ const Home: NextPage = () => {
           <div className="flex flex-col lg:items-end mb-16">
             <div className="h-20 mt-0 lg:mt-10 mb-10 ">
               <img
-                src="/assets/images/page-5/Registration@2x.png"
+                src="./assets/images/page-5/Registration@2x.png"
                 className="h-full mx-auto lg:ml-10"
               />
             </div>
             {/* <div className="h-20 my-14 mr-20">
             <img
-              src="/assets/images/page-5/Registration@2x.png"
+              src="./assets/images/page-5/Registration@2x.png"
               className="h-full"
             />
           </div> */}
@@ -1325,7 +1325,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col-reverse lg:flex-row gap-10 lg:border-t lg:border-yellow-800 lg:pt-10 px-10">
             <div className="flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-10">
               <div className="w-52">
-                <img src="/assets/images/page-5/IJMLANDlogo@2x.png" />
+                <img src="./assets/images/page-5/IJMLANDlogo@2x.png" />
               </div>
               <div className="flex flex-col lg:space-y-5">
                 <div className="">
@@ -1372,7 +1372,7 @@ const Home: NextPage = () => {
                   <IconButton
                     variant="link"
                     aria-label="facebook"
-                    icon={<img src="/assets/images/page-5/iconfacebook.svg" />}
+                    icon={<img src="./assets/images/page-5/iconfacebook.svg" />}
                   ></IconButton>
                 </a>
               </Link>
@@ -1385,7 +1385,7 @@ const Home: NextPage = () => {
                   <IconButton
                     variant="link"
                     aria-label="facebook"
-                    icon={<img src="/assets/images/page-5/iconwhatsapp.svg" />}
+                    icon={<img src="./assets/images/page-5/iconwhatsapp.svg" />}
                   ></IconButton>
                 </a>
               </Link>
@@ -1398,7 +1398,7 @@ const Home: NextPage = () => {
                   <IconButton
                     variant="link"
                     aria-label="facebook"
-                    icon={<img src="/assets/images/page-5/iconyoutube.svg" />}
+                    icon={<img src="./assets/images/page-5/iconyoutube.svg" />}
                   ></IconButton>
                 </a>
               </Link>
